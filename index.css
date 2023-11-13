@@ -1,0 +1,46 @@
+.menubt {
+    position: absolute;
+}
+
+#menuToggle {
+    display: none;
+}
+
+/* Style du label pour le bouton "Menu" */
+label[for="menuToggle"] {
+    cursor: pointer;
+    background-color: #0074D9; /* Couleur bleue */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    margin: 10px; /* Ajoute de l'espace autour du label */
+}
+
+/* Style de la liste (menu déroulant) */
+#menuList {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style des éléments de la liste */
+#menuList li {
+    margin: 10px 0; /* Ajoute de l'espace vertical entre les éléments */
+}
+
+/* Afficher la liste lorsque l'entrée radio est cochée */
+#menuToggle:checked + label + #menuList {
+    display: block;
+}
+
+.premiere-vu {
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.imgacceuil1{
+    justify-content: center;
+    max-width: 100%;
+}
