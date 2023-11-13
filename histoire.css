@@ -1,9 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 
+}
+
+h2 {
+  margin-left: 15%;
+}
 .gradient-overlay {
   display: flex;
   align-items: center;
   position: relative;
   display: inline-block;
+  width: 100%;
+  z-index: 1;
 }
 
 .gradient-overlay::before {
@@ -14,13 +31,43 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-  pointer-events: none; /* Permet aux clics de passer à travers la div vers l'image en dessous */
+  pointer-events: none;
 }
 
+.overlay-text {
+
+  position: absolute;
+  top: 170%; /* Adjust this value to vertically center the text */
+  left: 50%; /* Adjust this value to horizontally center the text */
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0); /* Set the text color */
+  font-size: 24px; /* Set the font size */
+  z-index: 1; /* Make sure the text appears above the image */
+}
 .gradient-overlay img {
   display: block;
-
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+.container {
+  margin-left: 25%;
+  padding: 2%;
+  z-index: 2;
+}
+
+.vertical-line {
+  position: relative;
+  width: 6px;
+  height: auto;
+  background-color: rgb(0, 71, 163);
+}
+
+.content {
+  padding: 20px;
+}
+
+.content p {
+  margin: 0;
 }
 
