@@ -1,0 +1,26 @@
+
+.gradient-overlay {
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+}
+
+.gradient-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  pointer-events: none; /* Permet aux clics de passer à travers la div vers l'image en dessous */
+}
+
+.gradient-overlay img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
