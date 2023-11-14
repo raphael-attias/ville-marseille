@@ -55,7 +55,11 @@ h2 {
     background-color: #f7f4f1;
     border-radius: 10px;
 }
-
+.sommaire_cat{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+}
 .sommaire ul {
     margin: 20px 0;
     list-style: none;
@@ -117,10 +121,22 @@ h2 {
     width: 50%;
     padding: 0 19px;
 }
-
+.section_categorie_plage{
+    max-width: 1300px;
+    margin: 5% auto;
+    background: rgba(247,244,241, 0.7);
+    border-radius: 20px;
+    padding: 50px;
+}
+.section_categorie_plage h2{
+    font-size: 25px
+}
+.section_categorie_plage p{
+    font-size: 18px;
+    margin: 10px 0;
+}
 .section_plage{
-    max-width: 1100px;
-    margin: 150px auto ;
+    margin: 50px auto 100px;
     text-align: center;
 }
 .section_plage h3{
@@ -160,4 +176,5 @@ h2 {
 [id*="titre"] {
     margin-bottom: 15px;
 }
+
 
