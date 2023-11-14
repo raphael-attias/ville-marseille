@@ -171,3 +171,65 @@ label[for="menuToggle"] {
 .intro h2 {
     padding-left: 20px;
 }
+
+/* Style de la section d'introduction */
+.intro {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+/* Style des images d'introduction */
+.imgacceuil1 {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Style de la section de randonnée */
+.rando {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Style des images de randonnée */
+.rando>img {
+    max-width: 2%;
+    height: auto;
+    max-height: 200px; /* Ajustez la hauteur selon vos besoins */
+}
+
+/* Style des articles de randonnée */
+.rando article {
+    max-width: 600px;
+}
+
+/* Style des titres des randonnées */
+.rando h3 {
+    color: #0074D9;
+}
+
+/* Style des listes des randonnées */
+.rando ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style des détails des randonnées */
+.rando li {
+    margin-bottom: 10px;
+}
+
+/* Style des paragraphes des randonnées */
+.rando p {
+    line-height: 1.4;
+}
+
+/* Ajout d'une marge en bas pour la dernière section */
+.rando:last-child {
+    margin-bottom: 40px;
+}
