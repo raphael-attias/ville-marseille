@@ -10,10 +10,7 @@ html {
 
 }
 
-header {
-    min-height: 200px;
-    background-color: darkblue;
-}
+
 
 a,
 a:visited {
@@ -96,7 +93,25 @@ h2 {
     display: flex;
     flex-direction: row;
 }
-
+.section_info h2{
+    padding-bottom: 7px;
+    border-bottom: 3px solid rgba(247,244,241, 0.5);
+    margin-bottom: 7px;
+}
+.section_info h3{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(247,244,241, 0.3);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.section_info li{
+    margin-left: 18px;
+}
 .bloc_baignade {
     width: 50%;
     padding: 0 19px;
@@ -115,12 +130,29 @@ h2 {
     max-width: 750px;
     
 }
+
 .section_plage img{
     width: 100%;
     margin: auto;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+.bloc_kit_secours{
+    background-color: rgba(247,244,241, 0.3);
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+.liste_kit_secours{
+    list-style:circle;
+    border-radius: 10px;
+}
+.kit_secours{
+    font-weight: 600;
+}
+
 [id*="titre"] {
     margin-bottom: 15px;
 }
+
