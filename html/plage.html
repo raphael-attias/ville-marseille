@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Nos Plages | Ville de Marseille </title>
-    <link rel="stylesheet" href="styles/plage.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="../styles/plage.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/header.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Montserrat:ital,wght@0,100;0,400;1,100&family=Poppins&family=Ubuntu&display=swap"
         rel="stylesheet">
@@ -14,7 +15,7 @@
 
 <body>
     <header> <!-- nav bar de raph-->
-        <img class="logomrs" src="images/Armoiries_de_Marseille.png">
+        <img class="logomrs" src="../images/Armoiries_de_Marseille.png">
         <nav class="menubt">
             <input type="checkbox" id="menuToggle">
             <label for="menuToggle">Menu</label>
@@ -39,7 +40,7 @@
     <main>
         <section class="main_head">
             <h1>Les plus belles plages de Marseille</h1>
-            <img src="images/plage1.jpg" alt="">
+            <img src="../images/plage1.jpg" alt="plage">
             <p>(Re) <strong>Découvrez où se baigner à Marseille</strong>. Voici <strong>21 plages à Marseille</strong>
                 sympas, avec leurs moyens d’accès <strong>pour aller nager</strong>. Certaines plages ont seulement un
                 accès à la mer par des rochers et d’autres sont de véritables plages de sable. Des plages tranquilles,
@@ -50,97 +51,348 @@
             <h2>Sommaire</h2>
             <nav>
                 <ul>
-                    <ul>Plages de Corbière, dans le quartier des Riaux :
-                        <a href="#">
+                    <p>Nos infos</p>
+                    <ul>
+                        <a href="#titre_baignade_surveille">
+                            <li>Baignade surveillée</li>
+                        </a>
+                        <a href="#titre_douches_sans_savon">
+                            <li>Des douches sans savon</li>
+                        </a>
+                        <a href="#titre_consignes_gratuites">
+                            <li>Nos consignes gratuites</li>
+                        </a>
+                        <a href="#titre_poste_de_secours">
+                            <li>Les postes de secours</li>
+                        </a>
+                        <a href="#titre_sanitaires">
+                            <li>Les sanitaires
+                            </li>
+                        </a>
+                    </ul>
+                    <a href="#plages_de_corbiere">Plages de Corbière, dans le quartier des Riaux :</a>
+                    <ul>
+                        <a href="#titre_plage_du_fortin">
                             <li>1. Plage du Fortin (galets)</li>
                         </a>
-                        <a href="#">
+                        <a href="#titre_plage_de_la_lave">
                             <li>2. Plage de la Lave (sable)</li>
                         </a>
-                        <a href="#">
+                        <a href="#titre_plage_de_la_batterie">
                             <li>3. Plage de la Batterie (sable)</li>
                         </a>
                     </ul>
                     <ul>Plages du Prado :
-                        <a href="#">
+                        <a href="#titre_plage_du_grand_roucas">
                             <li>4. Plage du Grand Roucas (Prado Nord)</li>
                         </a>
-                        <a href="#">
-                            <li>5 .Plage de David (Prado Sud)</li>
+                        <a href="#titre_plage_de_david">
+                            <li>5. Plage de David (Prado Sud)</li>
                         </a>
                     </ul>
-                    <a href="#">
-                        <li>6. Plage des Catalans (sable), à l'ouest du quartier du Pharo</li>
-                    </a>
-                    <a href="#">
-                        <li>7. Plage de Saint-Estève, dans la calanque homonyme, sur la côte sud de l'île Ratonneau dans
-                            les Îles du Frioul</li>
-                    </a>
-                    <a href="#">
-                        <li>8. Plage du Prophète</li>
-                    </a>
-
-                    <a href="#">
-                        <li>9. Plage de l'Huveaune (Épluchures Beach)</li>
-                    </a>
-                    <a href="#">
-                        <li>10. Plage Borély</li>
-                    </a>
-                    <a href="#">
-                        <li>11. Plage Bonneveine</li>
-                    </a>
-                    <a href="#">
-                        <li>12. Plage de La Vieille Chapelle</li>
-                    </a>
-                    <a href="#">
-                        <li>13. Plage de la Pointe Rouge</li>
-                    </a>
-                    <a href="#">
-                        <li>14. Plage du Bain des Dames</li>
-                    </a>
-                    <a href="#">
-                        <li>15. Plage de l'Abricotier</li>
-                    </a>
-                    <a href="#">
-                        <li>16. Plage de l'Anse des Sablettes</li>
-                    </a>
-                    <a href="#">
-                        <li>17. Plage de la Verrerie</li>
-                    </a>
-                    <a href="#">
-                        <li>18. Plage de la Maronaise</li>
-                    </a>
-                </ul>
-                <p>Dans les calanques :</p>
-                <ul>
-                    <a href="#">
-                        <li>19. Plage de Sormiou</li>
-                    </a>
-                    <a href="#">
-                        <li>20. Plage de Morgiou</li>
-                    </a>
-                    <a href="#">
-                        <li>21. Plage d'En Vau</li>
-                    </a>
+                    <p>Nos autres plages :</p>
+                    <ul>
+                        <a href="#titre_plage_des_catalans">
+                            <li>6. Plage des Catalans (sable), à l'ouest du quartier du Pharo</li>
+                        </a>
+                        <a href="#titre_plage_de_saint_estève">
+                            <li>7. Plage de Saint-Estève, dans la calanque homonyme, sur la côte sud de l'île Ratonneau
+                                dans
+                                les Îles du Frioul</li>
+                        </a>
+                        <a href="#titre_plage_du_prophète">
+                            <li>8. Plage du Prophète</li>
+                        </a>
+                        <a href="#titre_plage_de_l_huveaune">
+                            <li>9. Plage de l'Huveaune (Épluchures Beach)</li>
+                        </a>
+                        <a href="#titre_plage_borely">
+                            <li>10. Plage Borély</li>
+                        </a>
+                        <a href="#titre_plage_bonneveine">
+                            <li>11. Plage Bonneveine</li>
+                        </a>
+                        <a href="#titre_plage_de_la_vieille_chapelle">
+                            <li>12. Plage de La Vieille Chapelle</li>
+                        </a>
+                        <a href="#titre_plage_de_la_pointe_rouge">
+                            <li>13. Plage de la Pointe Rouge</li>
+                        </a>
+                        <a href="#titre_plage_du_bain_des_dames">
+                            <li>14. Plage du Bain des Dames</li>
+                        </a>
+                        <a href="#titre_plage_de_l_abricotier">
+                            <li>15. Plage de l'Abricotier</li>
+                        </a>
+                        <a href="#titre_plage_de_l_anse_des_sablettes">
+                            <li>16. Plage de l'Anse des Sablettes</li>
+                        </a>
+                        <a href="#titre_plage_de_la_verrerie">
+                            <li>17. Plage de la Verrerie</li>
+                        </a>
+                        <a href="#titre_plage_de_la_maronaise">
+                            <li>18. Plage de la Maronaise</li>
+                        </a>
+                    </ul>
+                    <p>Dans les calanques :</p>
+                    <ul>
+                        <a href="#titre_plage_de_sormiou">
+                            <li>19. Plage de Sormiou</li>
+                        </a>
+                        <a href="#titre_plage_de_morgiou">
+                            <li>20. Plage de Morgiou</li>
+                        </a>
+                        <a href="#titre_plage_d_en_vau">
+                            <li>21. Plage d'En Vau</li>
+                        </a>
+                    </ul>
                 </ul>
             </nav>
         </section>
+        <section class="big_section_info">
+            <section class="section_info">
+                <h2 id="titre_baignade_surveille">Nos Plages surveillées :</h2>
+                <article class="">
+                    <div class="bloc_baignade">
+                        <h3> (9h30 à 19h sauf mention contraire) :</h3>
+                        <ul>
+                            <li>Corbière Fortin</li>
+                            <li>Corbière Batterie</li>
+                            <li>Corbière La Lave</li>
+                            <li>Frioul St Estève (surveillée de 10h à 18h)</li>
+                            <li>Les Catalans (surveillée de 10h à 19h30)</li>
+                            <li>Prophète</li>
+                            <li>Prado Nord (Petit Roucas)</li>
+                            <li>Prado Nord (Grand Roucas)</li>
+                            <li>Prado Sud</li>
+                            <li>Huveaune (David)</li>
+                            <li>Borély</li>
+                            <li>Bonneveine</li>
+                            <li>Vieille-Chapelle</li>
+                            <li>Pointe-Rouge</li>
+                            <li>Sormiou (surveillée de 11h10 à 18h30)</li>
+                        </ul>
+                    </div>
+                    <div class="bloc_baignade">
+                        <h3>Zones non surveillées :</h3>
+                        <ul>
+                            <li>Anse des Sablettes (Colombet)</li>
+                            <li>Les Goudes (La Maronnaise)</li>
+                            <li>Calanque de Morgiou</li>
+                            <li>Bain des Dames</li>
+                            <li>Anse des Phocéens</li>
+                            <li>Bonne Brise (Verrerie)</li>
+                            <li>Morgiret (Frioul)</li>
+                            <li>En Vau</li>
+                            <li>Port Pin</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section class="section_info">
+                <h2 id="titre_douches_sans_savon">Des douches sans savon</h2>
+                <p>En accord avec l’Agence régionale de la Santé, et dans l’objectif de préserver la qualité des eaux de
+                    baignade, <b>le dispositif de l’ensemble des douches sans savon du littoral est maintenu.</b></p>
+            </section>
+            <section class="section_info">
+                <h2 id="titre_consignes_gratuites">Des consignes gratuites</h2>
+                <p>Grâce aux nombreux recrutements de la saison estivale, la Ville de Marseille offre chaque année,
+                    <strong>gratuitement</strong>, des services de consignes (situées à proximité des postes de secours)
+                    dans lesquelles les baigneurs peuvent laisser en toute sécurité leurs effets personnels. Les
+                    consignes
+                    sont ouvertes sur les mêmes horaires que les sanitaires.
+                </p>
+            </section>
+
+            <section class="section_info">
+                <h2 id="titre_sanitaires">Les sanitaires</h2>
+                <p>
+                    Les plages surveillées, mais aussi celles situées entre le parc balnéaire du Prado et le Parc
+                    national
+                    des
+                    Calanques, sont équipées de toilettes ouvertes tous les jours aux horaires suivants :
+                <ul>
+                    <li> 10h - 19h30 aux Catalans</li>
+                    <li> 10h - 18h au Frioul</li>
+                    <li>9h30 - 19h sur les plages de Corbière, du Prophète, du Prado Nord et Sud, de l’Huveaune, de
+                        Borély,
+                        de Bonneveine et de la Pointe Rouge.</li>
+                </ul>
+
+                Ce maillage sanitaire entretenu par la Ville de Marseille permet de maintenir la qualité des eaux de
+                baignades. Les ensembles sanitaires installés à proximité des postes de secours et les espaces
+                balnéaires du
+                Prado (8e) et Mistral (16e), sont entretenus chaque jour durant les heures d’ouverture.
+                </p>
+            </section>
+            <section class="section_info">
+                <h2 id="titre_poste_de_secours">Les postes de secours</h2>
+                <p>
+                    Relais essentiels dans le dispositif de surveillance des plages, les postes de secours sont
+                    opérationnels en période estivale de 9h30 à 19h - sauf mention contraire.
+
+                    <li>Corbière (plages de la Lave, Batterie, Fortin)</li>
+                    <li>Frioul (plage de Saint-Estève) (de 10h à 18h)</li>
+                    <li>Prophète</li>
+                    <li>Prado Nord</li>
+                    <li>Prado Sud</li>
+                    <li>Huveaune</li>
+                    <li>Bonneveine</li>
+                    <li>Pointe-Rouge</li>
+                    <li>Sormiou (de11h10 à 18h30)</li>
+                    <li>Catalans (de 10h à 19h30)</li>
+                    L’ensemble de ces postes répond aux trois exigences du dispositif (sécurité, hygiène et confort) et
+                    propose un niveau de prestation identique avec des sanitaires et des consignes gratuites (à
+                    l’exception
+                    de Sormiou et du Frioul).
+                </p>
+
+                Chaque poste de secours dispose :
+                
+                défibrillateurs cardiaques semi-automatiques,
+                postes radios mobiles permettant une liaison permanente avec les patrouilles sur terre et en mer,
+                une pharmacie complète, du matériel médical dont notamment l’oxygénothérapie,
+                des planches de secours en mer.
+            </section>
+        </section>
+        <section class="section_plage">
+            <h2 id="titre_plage_du_fortin">1. Plage du Fortin (galets)</h2>
+            <p></p>
+            <p>Les jeux de ballon et la musique sont interdits. La plage est accessible aux familles et aux poucettes.
+            </p>
+            <img src="../images/plage_de_fortin.jpg" alt="Plage du Fortin">
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_la_lave">2. Plage de la Lave (sable)</h2>
+            <div>
+                <p>Plage de la Lave est situé sur le Mer Méditerranée et il se trouve à la 26ème place sur 59 plages de
+                    la région Bouches-du-Rhône à 9.3 km de son centre, la ville de Marseille. C'est l'une des plages de
+                    Nouvelle Cite Penarroya, à seulement 1.1 km de son centre.
+                </p>
+                <p> Il s'agit d'un Littoral avec plusieurs petites baies avec, l'eau turquoise et cristalline et sable
+                    fin pur et lumineux, donc il n'y a pas besoin de chaussures spéciales. l'entrée dans l'eau a une
+                    netteté normale Cette plage convient à différentes catégories de personnes, voyageurs solitaires,
+                    amateurs de séjours détente et bien d'autres. Grand avantage, ce n'est pas un endroit bondé pendant
+                    la saison.
+                </p>
+                <p>
+                    Toute la côte de Plage de la Lave est accessible à tous. Il est complètement sauvage et ne dispose
+                    d'aucune infrastructure. . </p>
+                <p>
+                    En plus de la baignade et des séances de bronzage, vous pouvez également participer à d'autres
+                    activités.
+                </p>
+                <p>L'accès à la plage est pratique, la distance de la route est de moins de 500 mètres. Un parking est
+                    situé à proximité immédiate.</p>
+                <p>
+                    2autres plages sont également accessibles dans un rayon de 5 km. La meilleure est Plage De La
+                    Batterie,
+                    qui a une note de 7.6.
+                </p>
+            </div>
+            <img src="../images/plage_de_la_lave.jpg" alt="Plage de la Lave">
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_la_batterie">3. Plage de la Batterie (sable)</h2>
+            <p>La plage de la batterie, à Marseille, est une plage de sable fin, où il est très agréable de se baigner. Elle est publique mais non surveillée, dispose d'un chenal pour mettre à l'eau les bateaux et d'équipements sanitaires.</p>
+            <p>La plage de la Batterie est située à l’ouest du port. Elle offre une très belle perspective sur le port de Marseille et le port de l’Estaque et sur la Batterie de Corbière qui a donné son nom au site. L’eau qui est souvent turquoise est par contre jonchée de petits rochers, il faut se méfier où l’on marche. </p>
+            <img src="../images/plage_de_la_batterie.jpg" alt="Plage de la Batterie">
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_du_grand_roucas">4. Plage du Grand Roucas (Prado Nord)</h2>
+            <!-- Contenu de la section de la Plage du Grand Roucas -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_david">5. Plage de David (Prado Sud)</h2>
+            <!-- Contenu de la section de la Plage de David -->
+        </section>
+        <section class="section_plage">
+            <h2 id="titre_plage_des_catalans">6. Plage des Catalans (sable), à l'ouest du quartier du Pharo</h2>
+            <!-- Contenu de la section de la Plage des Catalans -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_saint_estève">7. Plage de Saint-Estève, dans la calanque homonyme, sur la côte sud de
+                l'île
+                Ratonneau dans les Îles du Frioul</h2>
+            <!-- Contenu de la section de la Plage de Saint-Estève -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_du_prophète">8. Plage du Prophète</h2>
+            <!-- Contenu de la section de la Plage du Prophète -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_l_huveaune">9. Plage de l'Huveaune (Épluchures Beach)</h2>
+            <!-- Contenu de la section de la Plage de l'Huveaune -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_borely">10. Plage Borély</h2>
+            <!-- Contenu de la section de la Plage Borély -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_bonneveine">11. Plage Bonneveine</h2>
+            <!-- Contenu de la section de la Plage Bonneveine -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_la_vieille_chapelle">12. Plage de La Vieille Chapelle</h2>
+            <!-- Contenu de la section de la Plage de La Vieille Chapelle -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_la_pointe_rouge">13. Plage de la Pointe Rouge</h2>
+            <!-- Contenu de la section de la Plage de la Pointe Rouge -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_du_bain_des_dames">14. Plage du Bain des Dames</h2>
+            <!-- Contenu de la section de la Plage du Bain des Dames -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_l_abricotier">15. Plage de l'Abricotier</h2>
+            <!-- Contenu de la section de la Plage de l'Abricotier -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_l_anse_des_sablettes">16. Plage de l'Anse des Sablettes</h2>
+            <!-- Contenu de la section de la Plage de l'Anse des Sablettes -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_la_verrerie">17. Plage de la Verrerie</h2>
+            <!-- Contenu de la section de la Plage de la Verrerie -->
+        </section>
+
+        <section class="section_plage">
+            <h2 id="titre_plage_de_la_maronaise">18. Plage de la Maronaise</h2>
+            <!-- Contenu de la section de la Plage de la Maronaise -->
+        </section>
     </main>
+
     <footer>
         <article class="article_footer_liens">
             <div class="bloc_liens_marseille">
                 <a href="https://www.marseille.fr/">
-                    <img class="image_logo_footer" src="images/logo_ville_de_marseille.png"
+                    <img class="image_logo_footer" src="../images/logo_ville_de_marseille.png"
                         alt="logo de ville marseille">
                 </a>
                 <a href="https://www.marseille.fr/mairie/services-de-proximit%C3%A9/all%C3%B4-mairie">
-                    <img class="image_logo_footer" src="images/allomairie-blanc.png" alt="logo allo mairie">
+                    <img class="image_logo_footer" src="../images/allomairie-blanc.png" alt="logo allo mairie">
                 </a>
                 <a href="https://www.sortiramarseille.fr/">
-                    <img class="image_logo_footer" src="images/sortir_a_marseille.png" alt="logo sortir a marseille">
+                    <img class="image_logo_footer" src="../images/sortir_a_marseille.png" alt="logo sortir a marseille">
                 </a>
                 <a href="https://www.acce-o.fr/client/marseille">
-                    <img class="image_logo_footer" src="images/acceo_blanc_footer.png"
+                    <img class="image_logo_footer" src="../images/acceo_blanc_footer.png"
                         alt="logo accessibilité malentendant">
                 </a>
             </div>
@@ -163,22 +415,22 @@
         <article class="article_footer_nav">
             <h1>Culture et loisirs</h1>
             <ul class="liste_footer">
-                <a href=".html">
+                <a href="index.html">
                     <li>Accueil</li>
                 </a>
-                <a href=".html">
+                <a href="randonnees.html">
                     <li>Randonnées</li>
                 </a>
-                <a href=".html">
+                <a href="plage.html">
                     <li>Nos plages</li>
                 </a>
-                <a href=".html">
+                <a href="parcs.html">
                     <li>Nos parcs publiques</li>
                 </a>
-                <a href=".html">
+                <a href="musee.html">
                     <li>L'Annuaire des Musées</li>
                 </a>
-                <a href=".html">
+                <a href="contact.html">
                     <li>Contact</li>
                 </a>
             </ul>

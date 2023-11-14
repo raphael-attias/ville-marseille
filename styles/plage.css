@@ -1,42 +1,126 @@
+html {
+    scroll-behavior:smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Josefin Sans', sans-serif; /* Choisissez une seule police */
+    font-family: 'Ubuntu','Josefin Sans','Montserrat','Poppins', sans-serif;
+
 }
 
-/* Styles pour le contenu principal (main) */
+header {
+    min-height: 200px;
+    background-color: darkblue;
+}
+
+a,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
 main {
-    margin: 20px auto;
-    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 .main_head {
-    margin: 30px 0;
-    text-align: center;
+    max-width: 800px;
+    margin: 30px auto;
 }
 
 .main_head h1 {
-    font-size: 40px;
+    margin: 30px 0;
+    text-align: center;
 }
 
 .main_head img {
     width: 100%;
 }
 
+.main_head p {
+    margin-top: 20px;
+}
+
 .sommaire {
     max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #E0E7E3;
+    margin: auto;
+    padding: 20px 20px;
+    background-color: #f7f4f1;
     border-radius: 10px;
 }
 
 .sommaire ul {
     margin: 20px 0;
+    list-style: none;
 }
 
 .sommaire li {
-    margin: 15px 0;
-    padding-left: 25px; /* Ajuste l'espacement à gauche */
+    margin: 15px 0 15px 25px;
+
+}
+
+.sommaire a:hover {
+    text-decoration: underline;
+}
+
+.big_section_info {
+    background-color: #0095ff;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px 50px;
+    border-radius: 10px;
+
+}
+
+.section_info {
+    margin: 10px 0;
+
+}
+
+.section_info:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.section_info article {
+    display: flex;
+    flex-direction: row;
+}
+
+.bloc_baignade {
+    width: 50%;
+    padding: 0 19px;
+}
+
+.section_plage{
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.section_plage h2{
+
+}
+.section_plage p{
+    margin: 0 auto 10px;
+    max-width: 750px;
+    
+}
+.section_plage img{
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+[id*="titre"] {
+    margin-bottom: 15px;
 }
