@@ -13,7 +13,7 @@ header {
     max-width: 100px;
     height: auto;
     text-align: center;
-    margin: 0 auto; /* Ajoutez cette ligne pour centrer horizontalement */
+    margin: 0 auto;
     display: block;
 }
 
@@ -64,7 +64,6 @@ label[for="menuToggle"] {
     margin-right: 15px;
     position: absolute;
     top: 100%;
-    /* Positionne le sous-menu sous le bouton */
     left: 0;
     display: none;
 }
@@ -72,7 +71,6 @@ label[for="menuToggle"] {
 /* Style des éléments de la liste */
 #menuList li {
     margin: 0;
-    /* Ajoute de l'espace vertical entre les éléments */
     position: relative;
     /* Position relative pour les liens */
     background-color: dimgray;
@@ -86,18 +84,12 @@ label[for="menuToggle"] {
 /* Ajouter des carrés colorés à côté de chaque lien */
 #menuList li::before {
     content: '';
-    /* Contenu vide */
     width: 10px;
-    /* Largeur du carré */
     height: 10px;
-    /* Hauteur du carré */
     display: inline-block;
-    /* Couleur du carré */
     margin-right: 10px;
-    /* Espacement entre le carré et le texte */
     position: absolute;
     left: -20px;
-    /* Positionne le carré à gauche du texte */
 }
 
 /* Style des liens de menu dans le sous-menu */
