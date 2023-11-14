@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Montserrat:ital,wght@0,100;0,400;1,100&family=Poppins&family=Ubuntu&display=swap');
+
 * {
+    font-family: Josefin sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +11,8 @@ body {
     background-color: #f0f0f0;
     /* Couleur de fond du body (header) */
 }
+
+
 
 /* Style pour la barre de recherche */
 .search-box {
@@ -31,7 +36,6 @@ body {
     background-color: #f7f4f1;
     line-height: 2.5em;
     width: 75%;
-    /* Élargit la zone de saisie de recherche à 75% de la largeur de la barre de recherche */
 }
 
 .search-box button {
@@ -67,6 +71,10 @@ body {
     }
 }
 
+.indexhtml{
+    background-color: lightgrey;
+}
+
 .titre {
     font-size: larger;
     font-weight: bolder;
@@ -74,38 +82,55 @@ body {
     text-align: center;
 }
 
-.premiere-vu {
-    justify-content: center;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
 .imgacceuil1 {
-    justify-content: center;
     max-width: 100%;
-    padding: 10px;
+}
+.imgacceuil2 {
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    animation: unfoldImage 3s ease-out forwards;
 }
 
-.introindex {
+.imgacceuil2:hover {
+    animation: unfoldImage 3s ease-out forwards;
+}
+
+.introindex,h2 {
     justify-content: center;
     padding: 20px;
     font-size: 30px;
-    text-align: center;
+    text-align: center;    
+    color: rgb(32, 60, 89);
 }
 
-.intro h2 {
+.introindex>p{
+    text-align: left;
+    margin: 0 10 0 10;
+    font-size: large;    
+    color: rgb(32, 60, 89);
+}
+
+.randohtml{
+    background-color: palegreen;
+
+}
+.introrando h2 {
     padding-left: 20px;
 }
 
 /* Style de la section d'introduction */
-.intro {
+.introrando {
     text-align: center;
     padding: 40px;
-    background-color: #f8f8f8;
-}
+    background-color: palegreen;
 
-.intro img{
+}
+.introrando>p{
+    text-align: left;
+    padding-top: 25px;
+}
+.introrando img{
     max-width: 75%;
     height: auto;
     justify-content: center;
@@ -152,13 +177,13 @@ body {
     font-weight: 500;
     color: black;
     padding: 30px;
-    text-align: center; /* Centre le contenu de la section horizontalement */
-    margin: 0 auto; /* Centre la section elle-même en utilisant des marges automatiques */
+    text-align: center;
+    margin: 0 auto; 
 }
 
 .rando figure {
     display: inline-block;
-    vertical-align: middle; /* Aligne les éléments verticalement au centre */
+    vertical-align: middle;
 }
 
 .rando img.randoim {
@@ -170,8 +195,8 @@ body {
 
 .rando article {
     display: inline-block;
-    vertical-align: middle; /* Aligne le haut de l'article avec le haut de la figure */
-    margin-left: 20px; /* Ajoute une marge à gauche pour l'espace entre l'image et le texte (ajustez selon vos besoins) */
+    vertical-align: middle; 
+    margin-left: 20px;
 }
 
 
@@ -195,7 +220,7 @@ body {
     flex-direction: row;
     list-style: none;
     padding: 0;
-    background-color: limegreen;
+    background-color: teal;
     border-radius: 7px;
 }
 
@@ -228,7 +253,107 @@ body {
     }
         
     .rando img {
-        margin-right: 10px; /* Ajoute une marge à droite pour l'espace entre les images */
-        margin-bottom: 0; /* Supprime la marge en bas des images */
+        margin-right: 10px;
+        margin-bottom: 0;
     }
 }
+
+/* Style spécifique pour le tableau */
+.tableaurando {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.tableaurando th, .tableaurando td {
+    border: 1px solid teal;
+    padding: 8px;
+    text-align: left;
+}
+
+.tableaurando th {
+    background-color: teal;
+}
+
+/* contactformulaire*/
+.contacthtml {
+    background: url('../images/velcontact.jpeg') center/cover no-repeat fixed;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    color: #f8782a; /* Couleur orange de l'OM */
+    font-size: larger;
+    font-weight: bolder;
+    backdrop-filter: blur(8px); /* Applique un flou au fond */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent blanc */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre légère */
+    border: 5px solid rgb(0, 116, 217);
+}
+
+/* Les styles précédents restent inchangés */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 2px solid rgb(0, 116, 217);
+    color: rgb(0, 116, 217);
+}
+
+form button {
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: dimgray;
+    color: goldenrod;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border: solid 2px goldenrod;
+    border-radius: 5px;
+}
+
+.mercihtml {
+    background: url('../images/mercimairie.jpg') center/cover no-repeat fixed;
+    background-size: 100% 100%; /* Ajustez la taille pour couvrir tout le conteneur */
+    height: 100vh; /* Assurez-vous que le conteneur couvre toute la hauteur de la vue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mercihtml h2 {
+    text-align: center;
+    color: #fff; /* Couleur du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Effet d'ombre sur le texte */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte */
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+
