@@ -5,103 +5,21 @@
 }
 
 body {
-    background-color: #f0f0f0; /* Couleur de fond du body (header) */
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0074D9; /* Couleur de fond du header */
-    padding: 10px 20px;
-    position: relative;
-}
-
-.logomrs {
-    max-width: 100px; /* Ajustez la taille du logo selon vos besoins */
-    height: auto;
-    margin: 0 auto; /* Centre le logo horizontalement */
-}
-.menubt {
-    display: flex;
-    align-items: center; /* Centre le contenu vertical du menu */
-}
-
-#menuToggle {
-    display: none;
-}
-
-/* Style du label pour le bouton "Menu" */
-label[for="menuToggle"] {
-    cursor: pointer;
-    background-color: #0074D9; /* Couleur bleue */
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    margin: 0;
-    position: absolute;
-    left: 20px; /* Ajuste la position du label */
-}
-
-/* Style de la liste (menu déroulant) */
-#menuList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 100%; /* Positionne le sous-menu sous le bouton */
-    left: 0;
-    display: none;
-}
-
-/* Style des éléments de la liste */
-#menuList li {
-    margin: 10px 0; /* Ajoute de l'espace vertical entre les éléments */
-    position: relative; /* Position relative pour les liens */
-    background-color: greenyellow;
-    padding: 10px;
-    border-radius: 7px;
-}
-#menuList a {
-    color: black;
-}
-/* Ajouter des carrés colorés à côté de chaque lien */
-#menuList li::before {
-    content: ''; /* Contenu vide */
-    width: 10px; /* Largeur du carré */
-    height: 10px; /* Hauteur du carré */
-    display: inline-block;
-    background-color: #0074D9; /* Couleur du carré */
-    margin-right: 10px; /* Espacement entre le carré et le texte */
-    position: absolute;
-    left: -20px; /* Positionne le carré à gauche du texte */
-}
-
-/* Style des liens de menu dans le sous-menu */
-.menu-link {
-    text-decoration: none;
-    color: #0074D9;
-    background-color: transparent;
-    padding: 10px 15px;
-    border: none;
-    transition: background-color 0.2s;
-    background-color: antiquewhite;
-    display: inline-block;
-}
-
-
-/* Afficher la liste lorsque l'entrée radio est cochée */
-#menuToggle:checked + label + #menuList {
-    display: block;
+    background-color: #f0f0f0;
+    /* Couleur de fond du body (header) */
 }
 
 /* Style pour la barre de recherche */
 .search-box {
     display: flex;
-    justify-content: center; /* Centrer horizontalement */
-    background-color: #0074D9; /* Couleur de fond de la barre de recherche */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Ajoute un effet d'ombrage */
-    padding: 10px; /* Espace autour de la barre de recherche */
+    justify-content: center;
+    /* Centrer horizontalement */
+    background-color: #0074D9;
+    /* Couleur de fond de la barre de recherche */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Ajoute un effet d'ombrage */
+    padding: 10px;
+    /* Espace autour de la barre de recherche */
     border-radius: 7px;
 }
 
@@ -112,7 +30,8 @@ label[for="menuToggle"] {
     color: whitesmoke;
     background-color: #f7f4f1;
     line-height: 2.5em;
-    width: 75%; /* Élargit la zone de saisie de recherche à 75% de la largeur de la barre de recherche */
+    width: 75%;
+    /* Élargit la zone de saisie de recherche à 75% de la largeur de la barre de recherche */
 }
 
 .search-box button {
@@ -148,7 +67,12 @@ label[for="menuToggle"] {
     }
 }
 
-
+.titre {
+    font-size: larger;
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: center;
+}
 
 .premiere-vu {
     justify-content: center;
@@ -156,11 +80,13 @@ label[for="menuToggle"] {
     font-size: 30px;
     text-align: center;
 }
-.imgacceuil1{
+
+.imgacceuil1 {
     justify-content: center;
     max-width: 100%;
     padding: 10px;
 }
+
 .introindex {
     justify-content: center;
     padding: 20px;
@@ -179,57 +105,130 @@ label[for="menuToggle"] {
     background-color: #f8f8f8;
 }
 
-/* Style des images d'introduction */
-.imgacceuil1 {
-    max-width: 100%;
+.intro img{
+    max-width: 75%;
     height: auto;
-    margin-top: 20px;
+    justify-content: center;
 }
+
+/* Style de la section de la carte */
+.carte {
+    background-image: url('../images/imgcartereact.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Style du texte dans la carte */
+.carte h4 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.carte a {
+    color: goldenrod;
+}
+/* Style du bouton dans la carte */
+.carte button {
+    background-color: dimgray;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+/* Ajustement du bouton au survol */
+.carte button:hover {
+    background-color: #0056b3;
+}
+
 
 /* Style de la section de randonnée */
 .rando {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 40px;
-    padding: 20px;
-    border: 1px solid #ddd;
+    font-weight: 500;
+    color: black;
+    padding: 30px;
+    text-align: center; /* Centre le contenu de la section horizontalement */
+    margin: 0 auto; /* Centre la section elle-même en utilisant des marges automatiques */
 }
 
-/* Style des images de randonnée */
-.rando>img {
-    max-width: 2%;
+.rando figure {
+    display: inline-block;
+    vertical-align: middle; /* Aligne les éléments verticalement au centre */
+}
+
+.rando img.randoim {
+    max-width: 100%;
     height: auto;
-    max-height: 200px; /* Ajustez la hauteur selon vos besoins */
+    max-height: 300px;
+    padding: 20px;
 }
 
-/* Style des articles de randonnée */
 .rando article {
-    max-width: 600px;
+    display: inline-block;
+    vertical-align: middle; /* Aligne le haut de l'article avec le haut de la figure */
+    margin-left: 20px; /* Ajoute une marge à gauche pour l'espace entre l'image et le texte (ajustez selon vos besoins) */
+}
+
+
+
+.rando h2 {
+    color: limegreen;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 /* Style des titres des randonnées */
 .rando h3 {
     color: #0074D9;
+    padding-right: 35px;
+    padding: 20px;
 }
 
 /* Style des listes des randonnées */
 .rando ul {
+    display: flex;
+    flex-direction: row;
     list-style: none;
     padding: 0;
+    background-color: limegreen;
+    border-radius: 7px;
 }
 
 /* Style des détails des randonnées */
 .rando li {
-    margin-bottom: 10px;
+    margin: 25px;
 }
 
 /* Style des paragraphes des randonnées */
 .rando p {
     line-height: 1.4;
+    margin: 20px;
 }
 
 /* Ajout d'une marge en bas pour la dernière section */
 .rando:last-child {
     margin-bottom: 40px;
+}
+
+/* Media queries pour la responsivité */
+@media screen and (min-width: 768px) {
+    .rando {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .rando article {
+        text-align: left;
+    }
+        
+    .rando img {
+        margin-right: 10px; /* Ajoute une marge à droite pour l'espace entre les images */
+        margin-bottom: 0; /* Supprime la marge en bas des images */
+    }
 }

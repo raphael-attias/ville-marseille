@@ -1,0 +1,131 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0074D9;
+    /* Couleur de fond du header */
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+    background-color: dimgray;
+}
+.logomrs {
+    max-width: 100px;
+    /* Ajustez la taille du logo selon vos besoins */
+    height: auto;
+    margin: 0 auto;
+    /* Centre le logo horizontalement */
+}
+.menubt {
+    display: flex;
+    align-items: center;
+    /* Centre le contenu vertical du menu */
+}
+
+#menuToggle {
+    display: none;
+}
+
+/* Style du label pour le bouton "Menu" */
+label[for="menuToggle"] {
+    cursor: pointer;
+    background-color: black;
+    /* Couleur bleue */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    border: solid white 2px;
+    border-radius: 5px;
+}
+
+/* Style de la liste (menu déroulant) */
+#menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    /* Positionne le sous-menu sous le bouton */
+    left: 0;
+    display: none;
+}
+
+/* Style des éléments de la liste */
+#menuList li {
+    margin: 10px 0;
+    /* Ajoute de l'espace vertical entre les éléments */
+    position: relative;
+    /* Position relative pour les liens */
+    background-color: greenyellow;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+#menuList a {
+    color: black;
+}
+
+/* Ajouter des carrés colorés à côté de chaque lien */
+#menuList li::before {
+    content: '';
+    /* Contenu vide */
+    width: 10px;
+    /* Largeur du carré */
+    height: 10px;
+    /* Hauteur du carré */
+    display: inline-block;
+    /* Couleur du carré */
+    margin-right: 10px;
+    /* Espacement entre le carré et le texte */
+    position: absolute;
+    left: -20px;
+    /* Positionne le carré à gauche du texte */
+}
+
+/* Style des liens de menu dans le sous-menu */
+.menu-link {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px 15px;
+    border: none;
+    transition: background-color 0.2s;
+    background-color: antiquewhite;
+    display: inline-block;
+}
+
+
+/* Afficher la liste lorsque l'entrée radio est cochée */
+#menuToggle:checked+label+#menuList {
+    display: block;
+}
+.reseau ul {
+    padding: 0; /* Supprimer le padding par défaut de la liste */
+}
+
+.reseau li {
+    list-style: none;
+    display: inline-block; /* Afficher les éléments en ligne (horizontalement) */
+    margin-right: 10px; /* Ajouter une marge entre les éléments */
+    align-items: center;
+    justify-content: baseline;
+}
+.reseau img {
+    max-width: 20px;
+    max-width: auto;
+}

@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/header.css">
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Montserrat:ital,wght@0,100;0,400;1,100&family=Poppins&family=Ubuntu&display=swap"
         rel="stylesheet">
@@ -14,8 +15,9 @@
 
 <body>
     <header>
-        <img class="logomrs" src="images/Armoiries_de_Marseille.png">
-        <nav class="menubt">
+        <img class="logomrs" src="../images/Armoiries_de_Marseille.png">
+        <nav>
+            <div class="menubt">
             <input type="checkbox" id="menuToggle">
             <label for="menuToggle">Menu</label>
             <ul id="menuList">
@@ -26,19 +28,22 @@
                 <li><a href="musee.html">Annuaires des musées</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a href="https://twitter.com/marseille" title="Twitter" target="_blank"><span
-                    class="hiddenLabel">Twitter</span><i class="icon-icons__twitter"></i></a>
-            <a href="https://facebook.com/marseilleville/" title="Facebook" target="_blank"><span
-                    class="hiddenLabel">Facebook</span><i class="icon-icons__facebook"></i></a>
-            <a href="https://www.instagram.com/villemarseille/" title="Instagram" target="_blank"><span
-                    class="hiddenLabel">Instagram</span><i class="icon-icons__instagram"></i></a>
-            <a href="https://www.youtube.com/user/VilledeMarseille" title="Youtube" target="_blank"><span
-                    class="hiddenLabel">Youtube</span><i class="icon-icons__youtube"></i></a>
+        </div>
+            <ul class="reseau">
+                <li><a href="https://twitter.com/marseille"><img src="../images/twitter.png" alt="twiter"></a></li>
+                <li><a href="https://facebook.com/marseilleville/"><img src="../images/facebook.png" alt="facebook"></a>
+                </li>
+                <li><a href="https://www.instagram.com/villemarseille/"><img src="../images/instagram.png"
+                            alt="instagram"></a></li>
+                <li><a href="https://www.youtube.com/user/VilledeMarseille"></a><img src="../images/youtube.png"
+                        alt="youtube"></li>
+            </ul>
         </nav>
     </header>
     <main>
+        <h1 class="titre">Ville de Maseille</h1>
         <section class="premiere-vu">
-            <img class="imgacceuil1" src="images/marseille_acceuil.jpg">
+            <img class="imgacceuil1" src="../images/marseille_acceuil.jpg">
             <div class="search-box">
                 <input type="text" placeholder="Rechercher...">
                 <button type="submit">Rechercher</button>
@@ -53,8 +58,12 @@
                 à une cuisine délicieuse, et embarquez pour une aventure inoubliable. Découvrez ce que Marseille a à
                 offrir, et préparez-vous à être ébloui par cette destination exceptionnelle."</p>
         </section>
-        <section>
-
+        <section class="carte">
+            <h4>Explorez la ville avec notre carte interactive :<br> votre guide interactif pour une expérience unique.
+            </h4>
+            <button>
+                <a href="https://carto.marseille.fr/" title="cartereactive">Découvrer Marseille</a>
+            </button>
         </section>
     </main>
 </body>
