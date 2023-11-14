@@ -10,14 +10,14 @@ header {
     text-align: center;
 }
 
-nav {
+header nav {
     display: flex;
     align-items: center;
 }
-nav a{
+header nav a{
     text-decoration: none;
 }
-nav a:hover{
+header nav a:hover{
     text-decoration: underline;
     color: whitesmoke;
     background-color: dimgray;
@@ -35,12 +35,12 @@ nav a:hover{
     /* Centre le contenu vertical du menu */
 }
 
-#menuToggle {
+header #menuToggle {
     display: none;
 }
 
 /* Style du label pour le bouton "Menu" */
-label[for="menuToggle"] {
+header label[for="menuToggle"] {
     cursor: pointer;
     background-color: black;
     /* Couleur bleue */
@@ -55,7 +55,7 @@ label[for="menuToggle"] {
 }
 
 /* Style de la liste (menu déroulant) */
-#menuList {
+header #menuList {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -67,7 +67,7 @@ label[for="menuToggle"] {
 }
 
 /* Style des éléments de la liste */
-#menuList li {
+header #menuList li {
     margin: 10px 0;
     /* Ajoute de l'espace vertical entre les éléments */
     position: relative;
@@ -77,12 +77,12 @@ label[for="menuToggle"] {
     border-radius: 7px;
 }
 
-#menuList a {
+header #menuList a {
     color: black;
 }
 
 /* Ajouter des carrés colorés à côté de chaque lien */
-#menuList li::before {
+header #menuList li::before {
     content: '';
     /* Contenu vide */
     width: 10px;
@@ -99,7 +99,7 @@ label[for="menuToggle"] {
 }
 
 /* Style des liens de menu dans le sous-menu */
-.menu-link {
+header .menu-link {
     text-decoration: none;
     background-color: transparent;
     padding: 10px 15px;
@@ -111,21 +111,21 @@ label[for="menuToggle"] {
 
 
 /* Afficher la liste lorsque l'entrée radio est cochée */
-#menuToggle:checked+label+#menuList {
+header #menuToggle:checked+label+#menuList {
     display: block;
 }
-.reseau ul {
+header .reseau ul {
     padding: 0; /* Supprimer le padding par défaut de la liste */
 }
 
-.reseau li {
+header .reseau li {
     list-style: none;
     display: inline-block; /* Afficher les éléments en ligne (horizontalement) */
     margin-right: 10px; /* Ajouter une marge entre les éléments */
     align-items: center;
     justify-content: baseline;
 }
-.reseau img {
+header .reseau img {
     max-width: 20px;
     max-width: auto;
 }
