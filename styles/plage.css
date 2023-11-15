@@ -139,6 +139,8 @@ h2 {
     margin: 50px auto 100px;
     text-align: center;
 }
+.section_plage:last-child{
+    margin: 50px auto 0px}
 .section_plage h3{
     font-size: 20px;
 }
