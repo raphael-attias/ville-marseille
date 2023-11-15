@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 
 header {
     display: flex;
     align-items: center;
-    background-color: #0074D9;
-    /* Couleur de fond du header */
+    background-color: #0095ff;
     padding: 10px 20px;
     position: relative;
     text-align: center;
+    position: relative;
 }
 
 .logomrs {
@@ -35,7 +44,8 @@ nav a:hover{
 .menubt {
     display: flex;
     align-items: center;
-    /* Centre le contenu vertical du menu */
+    max-width: 97.99px;
+    max-height: auto;
 }
 
 #menuToggle {
@@ -46,15 +56,17 @@ nav a:hover{
 label[for="menuToggle"] {
     cursor: pointer;
     background-color: dimgray;
-    /* Couleur bleue */
     color: goldenrod;
-    padding: 10px 15px;
-    border: none;
+    padding: 10px 0; /* Ajustez cette valeur pour contrôler la hauteur du bouton */
+    display: block;
     margin: 0;
     position: absolute;
     left: 20px;
+    height: 100%;
+    width: auto;
     border: solid goldenrod 2px;
     border-radius: 5px;
+    justify-content: center;
 }
 
 /* Style de la liste (menu déroulant) */

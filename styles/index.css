@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Montserrat:ital,wght@0,100;0,400;1,100&family=Poppins&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 * {
-    font-family: Josefin sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-body {
-    background-color: #f0f0f0;
-    /* Couleur de fond du body (header) */
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Edu+TAS+Beginner:wght@500&display=swap');
+
+.titre>h1 {
+    font-family: 'Edu TAS Beginner', sans-serif;
+    font-size: 56px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+main {
+    background: white;
+}
 
 
 /* Style pour la barre de recherche */
@@ -19,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     /* Centrer horizontalement */
-    background-color: #0074D9;
+    background-color: #0095ff;
     /* Couleur de fond de la barre de recherche */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     /* Ajoute un effet d'ombrage */
@@ -51,7 +59,7 @@ body {
 
 /* Style au survol du bouton de recherche */
 .search-box button:hover {
-    background-color: royalblue;
+    background-color: #0095ff;
 }
 
 /* Ajout de styles pour rendre la barre de navigation responsive */
@@ -71,9 +79,6 @@ body {
     }
 }
 
-.indexhtml{
-    background-color: lightgrey;
-}
 
 .titre {
     font-size: larger;
@@ -85,6 +90,7 @@ body {
 .imgacceuil1 {
     max-width: 100%;
 }
+
 .imgacceuil2 {
     justify-content: center;
     border: 2px solid #000;
@@ -96,25 +102,22 @@ body {
     animation: unfoldImage 3s ease-out forwards;
 }
 
-.introindex,h2 {
+.introindex,
+h2 {
     justify-content: center;
     padding: 20px;
     font-size: 30px;
-    text-align: center;    
-    color: rgb(32, 60, 89);
+    text-align: center;
+    color: #0095ff;
 }
 
-.introindex>p{
+.introindex>p {
     text-align: left;
     margin: 0 10 0 10;
-    font-size: large;    
-    color: rgb(32, 60, 89);
+    font-size: large;
+    color: #0095ff;
 }
 
-.randohtml{
-    background-color: palegreen;
-
-}
 .introrando h2 {
     padding-left: 20px;
 }
@@ -123,14 +126,15 @@ body {
 .introrando {
     text-align: center;
     padding: 40px;
-    background-color: palegreen;
 
 }
-.introrando>p{
+
+.introrando>p {
     text-align: left;
     padding-top: 25px;
 }
-.introrando img{
+
+.introrando img {
     max-width: 75%;
     height: auto;
     justify-content: center;
@@ -151,9 +155,11 @@ body {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
+
 .carte a {
     color: goldenrod;
 }
+
 /* Style du bouton dans la carte */
 .carte button {
     background-color: dimgray;
@@ -168,7 +174,7 @@ body {
 
 /* Ajustement du bouton au survol */
 .carte button:hover {
-    background-color: #0056b3;
+    background-color: #0095ff;
 }
 
 
@@ -178,10 +184,11 @@ body {
     color: black;
     padding: 30px;
     text-align: center;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .rando figure {
+
     display: inline-block;
     vertical-align: middle;
 }
@@ -190,26 +197,36 @@ body {
     max-width: 100%;
     height: auto;
     max-height: 300px;
-    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
 }
 
+section.rando {
+    max-width: 1150px;
+    max-height: auto;
+    background-color: #f7f4f1;
+    padding: 20px;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 30px ;
+}
 .rando article {
     display: inline-block;
-    vertical-align: middle; 
+    vertical-align: middle;
     margin-left: 20px;
 }
 
 
 
 .rando h2 {
-    color: limegreen;
+    color: #0095ff;
     font-size: 3em;
     font-weight: bold;
 }
 
 /* Style des titres des randonnées */
 .rando h3 {
-    color: #0074D9;
+    color: #0095ff;
     padding-right: 35px;
     padding: 20px;
 }
@@ -220,7 +237,7 @@ body {
     flex-direction: row;
     list-style: none;
     padding: 0;
-    background-color: teal;
+    background-color: #0095ff;
     border-radius: 7px;
 }
 
@@ -251,7 +268,7 @@ body {
     .rando article {
         text-align: left;
     }
-        
+
     .rando img {
         margin-right: 10px;
         margin-bottom: 0;
@@ -265,14 +282,15 @@ body {
     margin: auto;
 }
 
-.tableaurando th, .tableaurando td {
-    border: 1px solid teal;
+.tableaurando th,
+.tableaurando td {
+    border: 1px solid #0095ff;
     padding: 8px;
     text-align: left;
 }
 
 .tableaurando th {
-    background-color: teal;
+    background-color: #0095ff;
 }
 
 /* contactformulaire*/
@@ -295,15 +313,19 @@ form {
     max-width: 400px;
     margin: 0 auto;
     text-align: left;
-    color: #f8782a; /* Couleur orange de l'OM */
+    color: #f8782a;
+    /* Couleur orange de l'OM */
     font-size: larger;
     font-weight: bolder;
-    backdrop-filter: blur(8px); /* Applique un flou au fond */
-    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent blanc */
+    backdrop-filter: blur(8px);
+    /* Applique un flou au fond */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fond semi-transparent blanc */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre légère */
-    border: 5px solid rgb(0, 116, 217);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Ombre légère */
+    border: 5px #0095ff;
 }
 
 /* Les styles précédents restent inchangés */
@@ -320,7 +342,7 @@ form select {
     margin-bottom: 10px;
     box-sizing: border-box;
     border-radius: 7px;
-    border: 2px solid rgb(0, 116, 217);
+    border: 2px solid #0095ff;
     color: rgb(0, 116, 217);
 }
 
@@ -329,18 +351,20 @@ form button {
     font-size: larger;
     font-weight: bolder;
     background-color: dimgray;
-    color: goldenrod;
+    color: #0095ff;
     padding: 10px;
     border: none;
     cursor: pointer;
-    border: solid 2px goldenrod;
+    border: solid 2px #0095ff;
     border-radius: 5px;
 }
 
 .mercihtml {
     background: url('../images/mercimairie.jpg') center/cover no-repeat fixed;
-    background-size: 100% 100%; /* Ajustez la taille pour couvrir tout le conteneur */
-    height: 100vh; /* Assurez-vous que le conteneur couvre toute la hauteur de la vue */
+    background-size: 100% 100%;
+    /* Ajustez la taille pour couvrir tout le conteneur */
+    height: 100vh;
+    /* Assurez-vous que le conteneur couvre toute la hauteur de la vue */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,12 +372,13 @@ form button {
 
 .mercihtml h2 {
     text-align: center;
-    color: #fff; /* Couleur du texte */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Effet d'ombre sur le texte */
+    color: #fff;
+    /* Couleur du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+    /* Effet d'ombre sur le texte */
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fond semi-transparent pour le texte */
     border-radius: 10px;
     max-width: 100%;
 }
-
-
