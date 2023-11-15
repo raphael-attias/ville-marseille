@@ -4,15 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 h2 {
-  margin-left: 15%;
+  margin: 20px;
 }
 
 .gradient-overlay {
@@ -41,97 +42,59 @@ h2 {
   height: auto;
 }
 
-.container {
+.taille {
+  width: 0;
+  height: 300px;
+  border-radius: 15px;
+  transition: width 0.5s ease; 
+}
+
+.ligne_texte_img:hover .taille {
+  width: 300px; 
+}
+
+.ligne_texte_img:hover .overlay {
   display: flex;
-  margin-left: 25%;
+  color: white;
+  transition: margin-left 0.5s ease;
+}
+
+.overlay img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.dessus {
+  position: absolute;
+  top: 50vh;
+  margin: 0;
+  z-index: 2;
+}
+
+.ligne_texte_img {
+  display: flex;
+  margin-top: 20px;
   padding: 2%;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
 
 .vertical-line {
   position: relative;
   width: 6px;
-  height: auto;
+  height: 300px;
   background-color: rgb(0, 71, 163);
 }
 
-.content {
+.block_texte {
+  text-align: center;
   background-color: #f7f4f1;
   border-radius: 15px;
-  padding: 20px;
+  height: 300px;
+  width: 500px;
 }
 
-.content p {
-  margin: 0;
-}
-
-.dessus {
-  position: relative;
-  overflow: hidden;
-}
-
-.dessus {
-  color: #000000;
-  margin: 0;
-  position: relative;
-  z-index: 2;
-}
-
-.taille_massalia {
-  height: 18%;
-  width: 18%;
-}
-
-.taille_romaine {
-  height: 75%;
-  width: 75%;
-}
-
-.taille_provence {
-  height: 20%;
-  width: 20%;
-}
-
-.taille_croisades {
-  height: 23%;
-  width: 23%;
-}
-
-.taille_renaissance {
-  height: 19%;
-  width: 19%;
-}
-
-.taille_revolution {
-  height: 39%;
-  width: 39%;
-}
-
-.taille_guerre {
-  height: 18%;
-  width: 18%;
-}
-
-.taille_eco {
-  height: 20%;
-  width: 20%;
-}
-
-.overlay {
-  position: absolute;
-  left: 27%;
-  padding: 10px;
-  color: white;
-  transition: left 0.3s;
-  z-index: -1;
-}
-
-.overlay img {
-  object-fit: contain;
-}
-
-.container:hover .overlay {
-  left: 0;
-}
 
 .museum-info {
   background-color: #1600bd;
@@ -163,8 +126,19 @@ h2 {
   background-color: #f7f4f1;
 }
 
-img {
+.block img {
   max-width: 100%;
   height: auto;
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+main h2 {
+  text-align: center;
+}
+
+#map {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 20px;
 }
