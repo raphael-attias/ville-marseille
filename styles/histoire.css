@@ -3,220 +3,170 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
-
-}
-
-/* c'est raph ne touche pas */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0074D9; /* Couleur de fond du header */
-  padding: 10px 20px;
-  position: relative;
-}
-
-.logomrs {
-  max-width: 100px; /* Ajustez la taille du logo selon vos besoins */
-  height: auto;
-  margin: 0 auto; /* Centre le logo horizontalement */
-}
-.menubt {
-  display: flex;
-  align-items: center; /* Centre le contenu vertical du menu */
-}
-
-#menuToggle {
-  display: none;
-}
-
-/* Style du label pour le bouton "Menu" */
-label[for="menuToggle"] {
-  cursor: pointer;
-  background-color: #0074D9; /* Couleur bleue */
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  margin: 0;
-  position: absolute;
-  left: 20px; /* Ajuste la position du label */
-}
-
-/* Style de la liste (menu déroulant) */
-#menuList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 100%; /* Positionne le sous-menu sous le bouton */
-  left: 0;
-  display: none;
-}
-
-/* Style des éléments de la liste */
-#menuList li {
-  margin: 10px 0; /* Ajoute de l'espace vertical entre les éléments */
-  position: relative; /* Position relative pour les liens */
-  background-color: greenyellow;
-  padding: 10px;
-  border-radius: 7px;
-}
-#menuList a {
-  color: black;
-}
-/* Ajouter des carrés colorés à côté de chaque lien */
-#menuList li::before {
-  content: ''; /* Contenu vide */
-  width: 10px; /* Largeur du carré */
-  height: 10px; /* Hauteur du carré */
-  display: inline-block;
-  background-color: #0074D9; /* Couleur du carré */
-  margin-right: 10px; /* Espacement entre le carré et le texte */
-  position: absolute;
-  left: -20px; /* Positionne le carré à gauche du texte */
-}
-
-/* Style des liens de menu dans le sous-menu */
-.menu-link {
-  text-decoration: none;
-  color: #0074D9;
-  background-color: transparent;
-  padding: 10px 15px;
-  border: none;
-  transition: background-color 0.2s;
-  background-color: antiquewhite;
-  display: inline-block;
-}
-
-
-/* Afficher la liste lorsque l'entrée radio est cochée */
-#menuToggle:checked + label + #menuList {
-  display: block;
-}
-
-/* Style pour la barre de recherche */
-.search-box {
-  display: flex;
-  justify-content: center; /* Centrer horizontalement */
-  background-color: #0074D9; /* Couleur de fond de la barre de recherche */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Ajoute un effet d'ombrage */
-  padding: 10px; /* Espace autour de la barre de recherche */
-  border-radius: 7px;
-}
-
-.search-box input {
-  padding: 5px;
-  border: 1px solid whitesmoke;
-  border-radius: 4px;
-  color: whitesmoke;
-  background-color: #f7f4f1;
-  line-height: 2.5em;
-  width: 75%; /* Élargit la zone de saisie de recherche à 75% de la largeur de la barre de recherche */
-}
-
-.search-box button {
-  background-color: dimgray;
-  color: whitesmoke;
-  border: none;
-  border-radius: 4px;
-  padding: 5px 10px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  justify-content: center;
-}
-
-/* Style au survol du bouton de recherche */
-.search-box button:hover {
-  background-color: royalblue;
-}
-
-/* Ajout de styles pour rendre la barre de navigation responsive */
-@media (max-width: 768px) {
-  nav {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  nav ul {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  nav li {
-      margin-right: 0;
-  }
-}
-
-main{
-  margin-top: 20px;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 h2 {
-  margin-left: 15%;
+  margin: 20px;
 }
 
-.gradient-overlay {
+p {
+  margin-bottom: 20px;
+}
+
+.taille {
+  width: 0;
+  height: 300px;
+  transition: width 0.5s ease;
+}
+
+.ligne_texte_img:hover .taille {
+  width: 300px;
+}
+
+.ligne_texte_img:hover .overlay {
   display: flex;
-  align-items: center;
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  z-index: 1;
+  color: white;
+  transition: margin-left 0.5s ease;
 }
 
-.gradient-overlay::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-  pointer-events: none;
+.overlay img {
+  object-fit: cover;
+  height: 300px;
 }
 
-.overlay-text {
-  position: absolute;
-  padding-top: 10px;
-  top: 170%; /* Adjust this value to vertically center the text */
-  left: 50%; /* Adjust this value to horizontally center the text */
-  transform: translate(-50%, -50%);
-  color: rgb(0, 0, 0); /* Set the text color */
-  font-size: 24px; /* Set the font size */
-  z-index: 1; /* Make sure the text appears above the image */
-}
-.gradient-overlay img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.container {
-  margin-left: 25%;
+.ligne_texte_img {
+  display: flex;
+  margin-top: 20px;
   padding: 2%;
-  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  border-bottom-right-radius: 15px;
 }
 
-.vertical-line {
+.vertical-ligne {
   position: relative;
   width: 6px;
-  height: auto;
+  height: 300px;
   background-color: rgb(0, 71, 163);
 }
 
-.content {
+.block_texte {
+  text-align: center;
+  background-color: #f7f4f1;
+  width: 500px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+.museum-info {
+  background-color: #1600bd;
+  min-height: 500px;
+}
+
+.bloc_desc {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: #f7f4f1;
+  width: 50%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.containner {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.block {
+  margin: 30px 200px;
+  flex: 1;
+  text-align: center;
   padding: 20px;
+  border-radius: 15px;
+  background-color: #f7f4f1;
 }
 
-.content p {
-  padding-top: 10px;
+.block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-main {
-  margin-top: 800px; /* Ajustement de la marge supérieure pour décaler le texte vers le bas */
+main h2 {
+  text-align: center;
+}
+
+#map {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 20px;
+  height: 500px;
+  z-index: 0;
+}
+
+.img-museum {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+}
+
+.frise {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  padding: 30px;
+  background-color: #f2f2f2;
+  flex-wrap: wrap;
+  min-height: 150px ;
+}
+
+.lien_frise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  justify-content:center ;
+}
+
+.date {
+  margin: 0 10px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #0047a3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0047a3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.click {
+  position: absolute;
+  top: 1%;
+  left: 0;
+  height: 30px;
+  width: 30px;
+}
+
+.lien_frise span {
+  color: #0047a3;
+  text-align: center;
+}
+
+.date:first-child::before {
+  display: none;
 }
