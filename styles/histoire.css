@@ -122,25 +122,21 @@ main h2 {
 }
 
 .frise {
-  position: relative;
-  height: 100px;
-  background-color: #f0f0f0;
-  margin-top: 50px;
-}
-
-.date {
-  position: absolute;
-  height: 20px;
-  width: 2px;
-  background-color: #333;
-  transform: translateX(-50%);
-}
-
-.frise {
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  padding: 30px;
   background-color: #f2f2f2;
+  flex-wrap: wrap;
+  min-height: 150px ;
+}
+
+.lien_frise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  justify-content:center ;
 }
 
 .date {
@@ -158,28 +154,19 @@ main h2 {
   cursor: pointer;
 }
 
-.date a {
-  color: #0047a3;
+.click {
+  position: absolute;
+  top: 1%;
+  left: 0;
+  height: 30px;
+  width: 30px;
 }
 
-.date:hover {
-  background-color: #0047a3;
+.lien_frise span {
+  color: #0047a3;
+  text-align: center;
 }
 
 .date:first-child::before {
   display: none;
-}
-
-.date_texte {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-.click {
-  margin-top: 5px;
-  height: 30px;
-  width: 30px;
 }
