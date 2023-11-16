@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 
 header {
     display: flex;
     align-items: center;
-    background-color: #0074D9;
-    /* Couleur de fond du header */
+    background-color: #0047a3;
     padding: 10px 20px;
     position: relative;
     text-align: center;
+    position: relative;
 }
 
 .logomrs {
@@ -31,11 +40,19 @@ nav a:hover{
     background-color: dimgray;
 }
 
-
+.bas {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.haut{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
 .menubt {
     display: flex;
     align-items: center;
-    /* Centre le contenu vertical du menu */
+    max-width: 97.99px;
+    max-height: auto;
 }
 
 #menuToggle {
@@ -46,15 +63,19 @@ nav a:hover{
 label[for="menuToggle"] {
     cursor: pointer;
     background-color: dimgray;
-    /* Couleur bleue */
-    color: goldenrod;
-    padding: 10px 15px;
-    border: none;
+    color: #f7f4f1;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
     margin: 0;
-    position: absolute;
+    position: fixed;
+    top: 10px;
     left: 20px;
-    border: solid goldenrod 2px;
-    border-radius: 5px;
+    height: 65px;
+    width: 100px;
+    border-radius: 10px;
+    justify-content: center;
+    z-index: 1;
 }
 
 /* Style de la liste (menu déroulant) */
@@ -62,23 +83,24 @@ label[for="menuToggle"] {
     list-style: none;
     padding: 0;
     margin-right: 15px;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position: fixed;
+    top: 75px;
+    left: 20px;
     display: none;
+    z-index: 1;
 }
 
 /* Style des éléments de la liste */
 #menuList li {
     margin: 0;
     position: relative;
-    /* Position relative pour les liens */
     background-color: dimgray;
     padding: 10px;
+    z-index: 1;
 }
 
 #menuList a {
-    color: goldenrod;
+    color: #f7f4f1;
 }
 
 /* Ajouter des carrés colorés à côté de chaque lien */
@@ -104,18 +126,18 @@ label[for="menuToggle"] {
 }
 
 
-/* Afficher la liste lorsque l'entrée radio est cochée */
-#menuToggle:checked+label+#menuList {
+/* Afficher la liste lorsque l'entrée est cliqué */
+#menuToggle:checked + label + #menuList {
     display: block;
 }
 .reseau ul {
-    padding: 0; /* Supprimer le padding par défaut de la liste */
+    padding: 0; 
 }
 
 .reseau li {
     list-style: none;
-    display: inline-block; /* Afficher les éléments en ligne (horizontalement) */
-    margin-right: 10px; /* Ajouter une marge entre les éléments */
+    display: inline-block;
+    margin-right: 10px;
     align-items: center;
     justify-content: baseline;
 }
