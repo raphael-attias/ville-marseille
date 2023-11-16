@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-
 * {
     font-family: 'Comfortaa', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 header {
@@ -13,41 +10,45 @@ header {
     align-items: center;
     background-color: #0047a3;
     padding: 10px 20px;
-    position: relative;
-    text-align: center;
-    position: relative;
+    max-width: 100%;
+    max-height: 130px;
+    z-index: 1000;
 }
 
 .logomrs {
-    max-width: 100px;
+    max-height: 80px;
     height: auto;
     text-align: center;
     margin: 0 auto;
     display: block;
 }
 
-
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
-nav a{
+
+nav a {
     text-decoration: none;
 }
-nav a:hover{
+
+nav a:hover {
     text-decoration: underline;
     color: whitesmoke;
-    background-color: dimgray;
 }
 
 .bas {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.haut{
+
+.haut {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+
 .menubt {
     display: flex;
     align-items: center;
@@ -59,7 +60,6 @@ nav a:hover{
     display: none;
 }
 
-/* Style du label pour le bouton "Menu" */
 label[for="menuToggle"] {
     cursor: pointer;
     background-color: dimgray;
@@ -78,7 +78,6 @@ label[for="menuToggle"] {
     z-index: 1;
 }
 
-/* Style de la liste (menu déroulant) */
 #menuList {
     list-style: none;
     padding: 0;
@@ -90,7 +89,6 @@ label[for="menuToggle"] {
     z-index: 1;
 }
 
-/* Style des éléments de la liste */
 #menuList li {
     margin: 0;
     position: relative;
@@ -103,7 +101,6 @@ label[for="menuToggle"] {
     color: #f7f4f1;
 }
 
-/* Ajouter des carrés colorés à côté de chaque lien */
 #menuList li::before {
     content: '';
     width: 10px;
@@ -114,7 +111,6 @@ label[for="menuToggle"] {
     left: -20px;
 }
 
-/* Style des liens de menu dans le sous-menu */
 .menu-link {
     text-decoration: none;
     background-color: transparent;
@@ -125,23 +121,46 @@ label[for="menuToggle"] {
     display: inline-block;
 }
 
-
-/* Afficher la liste lorsque l'entrée est cliqué */
 #menuToggle:checked + label + #menuList {
     display: block;
 }
-.reseau ul {
-    padding: 0; 
+
+.reseau {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .reseau li {
     list-style: none;
-    display: inline-block;
     margin-right: 10px;
     align-items: center;
     justify-content: baseline;
+    position: relative;
 }
+
 .reseau img {
     max-width: 20px;
     max-width: auto;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin-right: 0;
+    }
+
+    .reseau {
+        margin-left: auto; /* Utilisez margin-left: auto pour pousser les réseaux sociaux à droite */
+    }
 }
