@@ -15,18 +15,19 @@ body {
 h2 {
   margin: 20px;
 }
-p{
+
+p {
   margin-bottom: 20px;
 }
 
 .taille {
   width: 0;
   height: 300px;
-  transition: width 0.5s ease; 
+  transition: width 0.5s ease;
 }
 
 .ligne_texte_img:hover .taille {
-  width: 300px; 
+  width: 300px;
 }
 
 .ligne_texte_img:hover .overlay {
@@ -156,7 +157,8 @@ main h2 {
   font-weight: bold;
   cursor: pointer;
 }
-.date a{
+
+.date a {
   color: #0047a3;
 }
 
