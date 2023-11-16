@@ -1,107 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 * {
+    font-family: 'Comfortaa', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-body {
-    background-color: #f0f0f0; /* Couleur de fond du body (header) */
+
+main {
+    background: white;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0074D9; /* Couleur de fond du header */
-    padding: 10px 20px;
-    position: relative;
-}
-
-.logomrs {
-    max-width: 100px; /* Ajustez la taille du logo selon vos besoins */
-    height: auto;
-    margin: 0 auto; /* Centre le logo horizontalement */
-}
-.menubt {
-    display: flex;
-    align-items: center; /* Centre le contenu vertical du menu */
-}
-
-#menuToggle {
-    display: none;
-}
-
-/* Style du label pour le bouton "Menu" */
-label[for="menuToggle"] {
-    cursor: pointer;
-    background-color: #0074D9; /* Couleur bleue */
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    margin: 0;
-    position: absolute;
-    left: 20px; /* Ajuste la position du label */
-}
-
-/* Style de la liste (menu déroulant) */
-#menuList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 100%; /* Positionne le sous-menu sous le bouton */
-    left: 0;
-    display: none;
-}
-
-/* Style des éléments de la liste */
-#menuList li {
-    margin: 10px 0; /* Ajoute de l'espace vertical entre les éléments */
-    position: relative; /* Position relative pour les liens */
-    background-color: greenyellow;
-    padding: 10px;
-    border-radius: 7px;
-}
-#menuList a {
+.titre {
+    font-size: 56px;
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: black;
-}
-/* Ajouter des carrés colorés à côté de chaque lien */
-#menuList li::before {
-    content: ''; /* Contenu vide */
-    width: 10px; /* Largeur du carré */
-    height: 10px; /* Hauteur du carré */
-    display: inline-block;
-    background-color: #0074D9; /* Couleur du carré */
-    margin-right: 10px; /* Espacement entre le carré et le texte */
     position: absolute;
-    left: -20px; /* Positionne le carré à gauche du texte */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
-/* Style des liens de menu dans le sous-menu */
-.menu-link {
-    text-decoration: none;
-    color: #0074D9;
-    background-color: transparent;
-    padding: 10px 15px;
-    border: none;
-    transition: background-color 0.2s;
-    background-color: antiquewhite;
-    display: inline-block;
+.imgacceuil1 {
+    max-width: 100%;
+    position: relative;
+    z-index: 0;
 }
-
-
-/* Afficher la liste lorsque l'entrée radio est cochée */
-#menuToggle:checked + label + #menuList {
-    display: block;
-}
-
 /* Style pour la barre de recherche */
 .search-box {
     display: flex;
-    justify-content: center; /* Centrer horizontalement */
-    background-color: #0074D9; /* Couleur de fond de la barre de recherche */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Ajoute un effet d'ombrage */
-    padding: 10px; /* Espace autour de la barre de recherche */
+    justify-content: center;
+    background-color: #0095ff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
     border-radius: 7px;
 }
 
@@ -112,7 +48,7 @@ label[for="menuToggle"] {
     color: whitesmoke;
     background-color: #f7f4f1;
     line-height: 2.5em;
-    width: 75%; /* Élargit la zone de saisie de recherche à 75% de la largeur de la barre de recherche */
+    width: 75%;
 }
 
 .search-box button {
@@ -128,7 +64,7 @@ label[for="menuToggle"] {
 
 /* Style au survol du bouton de recherche */
 .search-box button:hover {
-    background-color: royalblue;
+    background-color: #0095ff;
 }
 
 /* Ajout de styles pour rendre la barre de navigation responsive */
@@ -150,86 +86,292 @@ label[for="menuToggle"] {
 
 
 
-.premiere-vu {
+
+
+
+.imgacceuil2 {
     justify-content: center;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-.imgacceuil1{
-    justify-content: center;
-    max-width: 100%;
-    padding: 10px;
-}
-.introindex {
-    justify-content: center;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    animation: unfoldImage 3s ease-out forwards;
 }
 
-.intro h2 {
+.imgacceuil2:hover {
+    animation: unfoldImage 3s ease-out forwards;
+}
+
+.introindex,
+h2 {
+    justify-content: center;
+    padding: 20px;
+    font-size: 38px;
+    text-align: center;
+    color: #0095ff;
+}
+
+.introindex>p {
+    text-align: left;
+    margin: 0 10 0 10;
+    font-size: large;
+    color: #0095ff;
+}
+
+.introrando h2 {
     padding-left: 20px;
 }
 
 /* Style de la section d'introduction */
-.intro {
+.introrando {
     text-align: center;
     padding: 40px;
-    background-color: #f8f8f8;
+
 }
 
-/* Style des images d'introduction */
-.imgacceuil1 {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+.introrando>p {
+    text-align: left;
+    padding-top: 25px;
 }
+
+.introrando img {
+    max-width: 50%;
+    height: auto;
+    justify-content: center;
+}
+
+/* Style de la section de la carte */
+.carte {
+    background-image: url('../images/imgcartereact.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Style du texte dans la carte */
+.carte h4 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.carte a {
+    color: #f7f4f1;
+}
+
+/* Style du bouton dans la carte */
+.carte button {
+    background-color: dimgray;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+/* Ajustement du bouton au survol */
+.carte button:hover {
+    background-color: #0095ff;
+}
+
 
 /* Style de la section de randonnée */
 .rando {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 40px;
-    padding: 20px;
-    border: 1px solid #ddd;
+    font-weight: 500;
+    color: black;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* Style des images de randonnée */
-.rando>img {
-    max-width: 2%;
+.rando-content {
+    text-align: left; 
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.image-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rando img.randoim {
+    max-width: 100%;
     height: auto;
-    max-height: 200px; /* Ajustez la hauteur selon vos besoins */
+    max-height: 300px;
+    margin: 20px;
+    border-radius: 20px;
 }
 
-/* Style des articles de randonnée */
-.rando article {
-    max-width: 600px;
+section.rando {
+    max-width: 1150px;
+    max-height: auto;
+    background-color: #f7f4f1;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 30px ;
+}
+
+
+.rando h2 {
+    color: #0095ff;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 /* Style des titres des randonnées */
 .rando h3 {
-    color: #0074D9;
+    color: #0095ff;
+    font-size: 24px;
+    padding-right: 35px;
+    padding: 20px;
 }
 
 /* Style des listes des randonnées */
 .rando ul {
+    display: flex;
+    flex-direction: row;
     list-style: none;
     padding: 0;
+    background-color: #0095ff;
+    border-radius: 7px;
 }
 
 /* Style des détails des randonnées */
 .rando li {
-    margin-bottom: 10px;
+    margin: 25px;
 }
 
 /* Style des paragraphes des randonnées */
 .rando p {
     line-height: 1.4;
+    margin: 20px;
 }
 
 /* Ajout d'une marge en bas pour la dernière section */
 .rando:last-child {
     margin-bottom: 40px;
+}
+
+/* Media queries pour la responsivité */
+@media screen and (min-width: 768px) {
+    .rando {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .rando article {
+        text-align: left;
+    }
+
+    .rando img {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
+
+/* Style spécifique pour le tableau */
+.tableaurando {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.tableaurando th,
+.tableaurando td {
+    border: 1px solid #0095ff;
+    padding: 8px;
+    text-align: left;
+}
+
+.tableaurando th {
+    background-color: #0095ff;
+}
+
+/* contactformulaire*/
+.contacthtml {
+    background: url('../images/velcontact.jpeg') center/cover no-repeat fixed;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact h2{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 30);
+    color: #0047a3;
+}
+
+.contact img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    color: #f8782a;
+    font-size: larger;
+    font-weight: bolder;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 5px #0095ff;
+}
+
+/* Les styles précédents restent inchangés */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 2px solid #0095ff;
+    color: rgb(0, 116, 217);
+}
+
+form button {
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: dimgray;
+    color: #f7f4f1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border: solid 2px #0095ff;
+    border-radius: 5px;
+}
+
+.mercihtml {
+    background: url('../images/mercimairie.jpg') center/cover no-repeat fixed;
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mercihtml h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 100%;
 }
