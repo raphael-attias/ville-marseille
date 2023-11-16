@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #0095ff;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    position: relative;
+}
+
+<<<<<<< HEAD
+header nav {
+=======
+.logomrs {
+    max-width: 100px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+
+nav {
+>>>>>>> Raphaël
+    display: flex;
+    align-items: center;
+}
+header nav a{
+    text-decoration: none;
+}
+header nav a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+    background-color: dimgray;
+}
+
+
+.menubt {
+    display: flex;
+    align-items: center;
+    max-width: 97.99px;
+    max-height: auto;
+}
+
+header #menuToggle {
+    display: none;
+}
+
+/* Style du label pour le bouton "Menu" */
+header label[for="menuToggle"] {
+    cursor: pointer;
+    background-color: dimgray;
+    color: #f7f4f1;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    height: 65px;
+    width: 100px;
+    border: solid #f7f4f1 2px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+/* Style de la liste (menu déroulant) */
+header #menuList {
+    list-style: none;
+    padding: 0;
+    margin-right: 15px;
+    position: fixed;
+    top: 75px;
+    left: 20px;
+    display: none;
+}
+
+/* Style des éléments de la liste */
+<<<<<<< HEAD
+header #menuList li {
+    margin: 10px 0;
+    /* Ajoute de l'espace vertical entre les éléments */
+=======
+#menuList li {
+    margin: 0;
+>>>>>>> Raphaël
+    position: relative;
+    /* Position relative pour les liens */
+    background-color: dimgray;
+    padding: 10px;
+}
+
+<<<<<<< HEAD
+header #menuList a {
+    color: black;
+=======
+#menuList a {
+    color: #f7f4f1;
+>>>>>>> Raphaël
+}
+
+/* Ajouter des carrés colorés à côté de chaque lien */
+header #menuList li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    left: -20px;
+}
+
+/* Style des liens de menu dans le sous-menu */
+header .menu-link {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px 15px;
+    border: none;
+    transition: background-color 0.2s;
+    background-color: antiquewhite;
+    display: inline-block;
+}
+
+
+<<<<<<< HEAD
+/* Afficher la liste lorsque l'entrée radio est cochée */
+header #menuToggle:checked+label+#menuList {
+=======
+/* Afficher la liste lorsque l'entrée est cliqué */
+#menuToggle:checked + label + #menuList {
+>>>>>>> Raphaël
+    display: block;
+}
+header .reseau ul {
+    padding: 0; /* Supprimer le padding par défaut de la liste */
+}
+
+header .reseau li {
+    list-style: none;
+    display: inline-block; /* Afficher les éléments en ligne (horizontalement) */
+    margin-right: 10px; /* Ajouter une marge entre les éléments */
+    align-items: center;
+    justify-content: baseline;
+}
+header .reseau img {
+    max-width: 20px;
+    max-width: auto;
+}

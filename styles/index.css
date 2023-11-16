@@ -359,9 +359,7 @@ form button {
 .mercihtml {
     background: url('../images/mercimairie.jpg') center/cover no-repeat fixed;
     background-size: 100% 100%;
-    /* Ajustez la taille pour couvrir tout le conteneur */
     height: 100vh;
-    /* Assurez-vous que le conteneur couvre toute la hauteur de la vue */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,12 +368,9 @@ form button {
 .mercihtml h2 {
     text-align: center;
     color: #fff;
-    /* Couleur du texte */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
-    /* Effet d'ombre sur le texte */
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Fond semi-transparent pour le texte */
     border-radius: 10px;
     max-width: 100%;
 }
