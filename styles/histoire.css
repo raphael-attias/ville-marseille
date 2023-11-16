@@ -175,3 +175,9 @@ main h2 {
   transform: translateX(-50%);
   text-align: center;
 }
+
+.click {
+  margin-top: 5px;
+  height: 30px;
+  width: 30px;
+}
