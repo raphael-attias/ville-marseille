@@ -56,16 +56,18 @@ nav a:hover{
 label[for="menuToggle"] {
     cursor: pointer;
     background-color: dimgray;
-    color: goldenrod;
-    padding: 10px 0; /* Ajustez cette valeur pour contrôler la hauteur du bouton */
-    display: block;
+    color: #f7f4f1;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
     margin: 0;
-    position: absolute;
+    position: fixed;
+    top: 10px;
     left: 20px;
-    height: 100%;
-    width: auto;
-    border: solid goldenrod 2px;
-    border-radius: 5px;
+    height: 65px;
+    width: 100px;
+    border: solid #f7f4f1 2px;
+    border-radius: 10px;
     justify-content: center;
 }
 
@@ -74,9 +76,9 @@ label[for="menuToggle"] {
     list-style: none;
     padding: 0;
     margin-right: 15px;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position: fixed;
+    top: 75px;
+    left: 20px;
     display: none;
 }
 
@@ -90,7 +92,7 @@ label[for="menuToggle"] {
 }
 
 #menuList a {
-    color: goldenrod;
+    color: #f7f4f1;
 }
 
 /* Ajouter des carrés colorés à côté de chaque lien */
@@ -116,8 +118,8 @@ label[for="menuToggle"] {
 }
 
 
-/* Afficher la liste lorsque l'entrée radio est cochée */
-#menuToggle:checked+label+#menuList {
+/* Afficher la liste lorsque l'entrée est cliqué */
+#menuToggle:checked + label + #menuList {
     display: block;
 }
 .reseau ul {

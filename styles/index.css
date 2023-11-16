@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Edu+TAS+Beginner:wght@500&display=swap');
 * {
     font-family: 'Comfortaa', sans-serif;
     margin: 0;
@@ -8,9 +8,7 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Edu+TAS+Beginner:wght@500&display=swap');
-
-.titre>h1 {
+.titre {
     font-family: 'Edu TAS Beginner', sans-serif;
     font-size: 56px;
     font-weight: bolder;
@@ -26,13 +24,9 @@ main {
 .search-box {
     display: flex;
     justify-content: center;
-    /* Centrer horizontalement */
     background-color: #0095ff;
-    /* Couleur de fond de la barre de recherche */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    /* Ajoute un effet d'ombrage */
     padding: 10px;
-    /* Espace autour de la barre de recherche */
     border-radius: 7px;
 }
 
@@ -81,7 +75,7 @@ main {
 
 
 .titre {
-    font-size: larger;
+    font-size: 56px;
     font-weight: bolder;
     font-style: oblique;
     text-align: center;
@@ -106,7 +100,7 @@ main {
 h2 {
     justify-content: center;
     padding: 20px;
-    font-size: 30px;
+    font-size: 38px;
     text-align: center;
     color: #0095ff;
 }
@@ -135,7 +129,7 @@ h2 {
 }
 
 .introrando img {
-    max-width: 75%;
+    max-width: 50%;
     height: auto;
     justify-content: center;
 }
@@ -157,7 +151,7 @@ h2 {
 }
 
 .carte a {
-    color: goldenrod;
+    color: #f7f4f1;
 }
 
 /* Style du bouton dans la carte */
@@ -183,12 +177,17 @@ h2 {
     font-weight: 500;
     color: black;
     padding: 30px;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
 }
 
-.rando figure {
+.rando-content {
+    text-align: left; 
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.image-container {
     display: inline-block;
     vertical-align: middle;
 }
@@ -205,17 +204,10 @@ section.rando {
     max-width: 1150px;
     max-height: auto;
     background-color: #f7f4f1;
-    padding: 20px;
     border-radius: 25px;
     padding: 30px;
     margin-bottom: 30px ;
 }
-.rando article {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 20px;
-}
-
 
 
 .rando h2 {
@@ -227,6 +219,7 @@ section.rando {
 /* Style des titres des randonnées */
 .rando h3 {
     color: #0095ff;
+    font-size: 24px;
     padding-right: 35px;
     padding: 20px;
 }
@@ -303,6 +296,10 @@ section.rando {
     margin-bottom: 20px;
 }
 
+.contact h2{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
 .contact img {
     width: 100%;
     max-width: 400px;
@@ -351,7 +348,7 @@ form button {
     font-size: larger;
     font-weight: bolder;
     background-color: dimgray;
-    color: #0095ff;
+    color: #f7f4f1;
     padding: 10px;
     border: none;
     cursor: pointer;
