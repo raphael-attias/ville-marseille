@@ -8,35 +8,41 @@
     <link rel="stylesheet" href="../styles/parcs.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/header.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Montserrat:ital,wght@0,100;0,400;1,100&family=Poppins&family=Ubuntu&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a5b2b45d49.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <header> <!-- nav bar de raph-->
+    <header>
         <img class="logomrs" src="../images/Armoiries_de_Marseille.png">
-        <nav class="menubt">
-            <input type="checkbox" id="menuToggle">
-            <label for="menuToggle">Menu</label>
-            <ul id="menuList">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="randonnees.html">Randonnées</a></li>
-                <li><a href="plages.html">Les plages</a></li>
-                <li><a href="parcs.html">Parcs publiques</a></li>
-                <li><a href="musee.html">Annuaires des musées</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav>
+            <div class="menubt">
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle">Menu</label>
+                <ul id="menuList">
+                    <li class="haut"><a href="index.html">Accueil</a></li>
+                    <li><a href="randonnees.html">Randonnées</a></li>
+                    <li><a href="plages.html">Les plages</a></li>
+                    <li><a href="parcs.html">Parcs publiques</a></li>
+                    <li><a href="musee.html">Annuaires des musées</a></li>
+                    <li class="bas"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <ul class="reseau">
+                <li><a href="https://twitter.com/marseille"><img src="../images/twitter.png" alt="twiter"></a></li>
+                <li><a href="https://facebook.com/marseilleville/"><img src="../images/facebook.png" alt="facebook"></a>
+                </li>
+                <li><a href="https://www.instagram.com/villemarseille/"><img src="../images/instagram.png"
+                            alt="instagram"></a></li>
+                <li><a href="https://www.youtube.com/user/VilledeMarseille"></a><img src="../images/youtube.png"
+                        alt="youtube"></li>
             </ul>
-            <a href="https://twitter.com/marseille" title="Twitter" target="_blank"><span
-                    class="hiddenLabel">Twitter</span><i class="icon-icons__twitter"></i></a>
-            <a href="https://facebook.com/marseilleville/" title="Facebook" target="_blank"><span
-                    class="hiddenLabel">Facebook</span><i class="icon-icons__facebook"></i></a>
-            <a href="https://www.instagram.com/villemarseille/" title="Instagram" target="_blank"><span
-                    class="hiddenLabel">Instagram</span><i class="icon-icons__instagram"></i></a>
-            <a href="https://www.youtube.com/user/VilledeMarseille" title="Youtube" target="_blank"><span
-                    class="hiddenLabel">Youtube</span><i class="icon-icons__youtube"></i></a>
         </nav>
-    </header> <!-- fin -->
+    </header>
     <main>
 
         <!------------- section presentation ------------->
@@ -352,7 +358,7 @@
             </section>
             <!------------- section Parc de la Moline ------------->
             <section class="section_parc" id="parc_moline">
-                <h2 >Parc de la Moline</h2>
+                <h2>Parc de la Moline</h2>
                 <div class="bloc_contenu_parc">
                     <article>
                         <img class="first_img" src="../images/parc_moline_main_1.jpg" alt="Parc de la Moline">
@@ -381,7 +387,6 @@
         </section>
 
     </main>
-
     <footer>
         <article class="article_footer_liens">
             <div class="bloc_liens_marseille">
@@ -426,15 +431,18 @@
                     <li>Randonnées</li>
                 </a>
                 <a href="plage.html">
-                    <li>Nos plages</li>
+                    <li>Les plages</li>
                 </a>
                 <a href="parcs.html">
-                    <li>Nos parcs publiques</li>
+                    <li>Parcs publiques</li>
                 </a>
                 <a href="musee.html">
                     <li>L'Annuaire des Musées</li>
                 </a>
-                <a href="contact.html">
+                <a href="chronologie.html">
+                    <li>Histoire</li>
+                </a>
+                <a href=".html">
                     <li>Contact</li>
                 </a>
             </ul>
