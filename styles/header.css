@@ -40,7 +40,14 @@ nav a:hover{
     background-color: dimgray;
 }
 
-
+.bas {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.haut{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
 .menubt {
     display: flex;
     align-items: center;
@@ -66,9 +73,9 @@ label[for="menuToggle"] {
     left: 20px;
     height: 65px;
     width: 100px;
-    border: solid #f7f4f1 2px;
     border-radius: 10px;
     justify-content: center;
+    z-index: 1;
 }
 
 /* Style de la liste (menu déroulant) */
@@ -80,15 +87,16 @@ label[for="menuToggle"] {
     top: 75px;
     left: 20px;
     display: none;
+    z-index: 1;
 }
 
 /* Style des éléments de la liste */
 #menuList li {
     margin: 0;
     position: relative;
-    /* Position relative pour les liens */
     background-color: dimgray;
     padding: 10px;
+    z-index: 1;
 }
 
 #menuList a {
@@ -123,13 +131,13 @@ label[for="menuToggle"] {
     display: block;
 }
 .reseau ul {
-    padding: 0; /* Supprimer le padding par défaut de la liste */
+    padding: 0; 
 }
 
 .reseau li {
     list-style: none;
-    display: inline-block; /* Afficher les éléments en ligne (horizontalement) */
-    margin-right: 10px; /* Ajouter une marge entre les éléments */
+    display: inline-block;
+    margin-right: 10px;
     align-items: center;
     justify-content: baseline;
 }
