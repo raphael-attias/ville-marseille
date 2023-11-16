@@ -14,12 +14,11 @@ header {
     background-color: #0047a3;
     padding: 10px 20px;
     position: relative;
-    text-align: center;
-    position: relative;
+    height: 85px;
 }
 
 .logomrs {
-    max-width: 100px;
+    max-height: 85px;
     height: auto;
     text-align: center;
     margin: 0 auto;
@@ -30,6 +29,8 @@ header {
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 nav a{
     text-decoration: none;
@@ -37,7 +38,6 @@ nav a{
 nav a:hover{
     text-decoration: underline;
     color: whitesmoke;
-    background-color: dimgray;
 }
 
 .bas {
@@ -130,18 +130,45 @@ label[for="menuToggle"] {
 #menuToggle:checked + label + #menuList {
     display: block;
 }
-.reseau ul {
+.reseau {
     padding: 0; 
+    display: flex;
+    justify-content: flex-end;
 }
 
 .reseau li {
     list-style: none;
-    display: inline-block;
     margin-right: 10px;
     align-items: center;
     justify-content: baseline;
+    position: relative;
 }
+
 .reseau img {
     max-width: 20px;
     max-width: auto;
+}
+
+
+/* Ajout de styles pour rendre la barre de navigation responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin-right: 0;
+    }
+
+    .reseau {
+        justify-content: right;
+    }
+
+    
 }
