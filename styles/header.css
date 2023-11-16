@@ -47,7 +47,7 @@ header nav a:hover {
 
 .haut {
     border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+
 }
 
 .menubt {
@@ -56,15 +56,12 @@ header nav a:hover {
     max-width: 97.99px;
     max-height: auto;
 }
-
-#menuToggle {
-    display: none;
-}
+  
 
 header label[for="menuToggle"] {
     cursor: pointer;
     background-color: dimgray;
-    color: #f7f4f1;
+    color: white;
     padding: 10px 0;
     display: flex;
     align-items: center;
@@ -78,7 +75,13 @@ header label[for="menuToggle"] {
     justify-content: center;
     z-index: 1;
 }
+#menuToggle{
+    opacity: 0;
 
+}
+#menuToggle:checked + label{
+    border-radius: 10px 10px 0 0;
+}
 #menuList {
     list-style: none;
     padding: 0;
@@ -99,11 +102,10 @@ header label[for="menuToggle"] {
 }
 
 #menuList a {
-    color: #f7f4f1;
+    color: white;
     text-decoration: none;
 }
-#menuList a :hover{
-    color: #f7f4f1;
+#menuList a:hover{
     text-decoration: underline;
 }
 
