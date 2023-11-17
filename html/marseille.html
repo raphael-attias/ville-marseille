@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merci ! | Ville de Marseille</title>
+    <title>Accueil | Ville de Marseille</title>
+    <link rel="stylesheet" type="text/css" href="../styles/header.css">
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
@@ -14,7 +15,7 @@
     <script src="https://kit.fontawesome.com/a5b2b45d49.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="indexhtml">
     <header>
         <div class="menubt">
             <input type="checkbox" id="menuToggle">
@@ -42,8 +43,31 @@
             </ul>
         </nav>
     </header>
-    <main class="mercihtml">
-        <h2>Votre demande sera traité dans les meilleures délais !</h2>
+    <main>
+        <div class="img-container">
+            <img class="imgacceuil1" src="../images/marseille_acceuil.jpg">
+            <h1 class="titre">Ville de Marseille</h1>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Rechercher...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <section class="introindex">
+            <h2 class="introindex">Bienvenue à Marseille : <br>Où l'Histoire, la Culture et la Mer se Rencontrent</h2>
+            <br>
+            <p>Explorez une ville baignée de soleil, riche en histoire, et imprégnée d'une ambiance méditerranéenne
+                vibrante. Marseille, la perle de la côte d'Azur, vous accueille avec ses ruelles pittoresques, ses
+                marchés animés, et ses plages envoûtantes. Plongez dans la diversité de la culture marseillaise, goûtez
+                à une cuisine délicieuse, et embarquez pour une aventure inoubliable. Découvrez ce que Marseille a à
+                offrir, et préparez-vous à être ébloui par cette destination exceptionnelle."</p>
+        </section>
+        <section class="carte">
+            <h4>Explorez la ville avec notre carte interactive :<br> votre guide interactif pour une expérience unique.
+            </h4>
+            <button>
+                <a href="https://carto.marseille.fr/" title="cartereactive">Découvrer Marseille</a>
+            </button>
+        </section>
     </main>
     <footer>
         <article class="article_footer_liens">

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merci ! | Ville de Marseille</title>
+    <title>Contact | Ville de Marseille</title>
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,8 +42,37 @@
             </ul>
         </nav>
     </header>
-    <main class="mercihtml">
-        <h2>Votre demande sera traité dans les meilleures délais !</h2>
+    <main class="contacthtml">
+
+        <div class="contact">
+            <img src="../images/Armoiries_de_Marseille.png">
+        </div>
+        <form action="merci.html" method="POST">
+            <h2>Contactez-nous</h2>
+            <label for="civility">Civilité :</label>
+            <select id="civility" name="civility">
+                <option value="monsieur">Monsieur</option>
+                <option value="madame">Madame</option>
+            </select>
+
+            <label for="firstname">Prénom :</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Ex : Jean" required>
+
+            <label for="lastname">Nom :</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Ex : Dupont" required>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" placeholder="Ex : jean.dupont@example.com" required>
+
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Ex : 0123456789" required>
+
+            <label for="message">Votre demande ? :</label>
+            <input type="text" id="message" name="message" placeholder="Ex : Votre demande ici" required>
+
+            <button type="submit">Envoyer</button>
+        </form>
+
     </main>
     <footer>
         <article class="article_footer_liens">
@@ -107,5 +136,4 @@
         </article>
     </footer>
 </body>
-
 </html>

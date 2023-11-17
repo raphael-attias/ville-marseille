@@ -6,11 +6,8 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu','Josefin Sans','Montserrat','Poppins', sans-serif;
-
+    font-family: 'Comfortaa', sans-serif;
 }
-
-
 
 a,
 a:visited {
@@ -174,7 +171,15 @@ h2 {
 .kit_secours{
     font-weight: 600;
 }
-
+.back_to_top{
+    display: block;
+    text-align: center;
+    color: #0047a3 !important;
+    font-weight: bold;
+}
+.back_to_top:hover{
+    text-decoration: underline;
+}
 [id*="titre"] {
     margin-bottom: 15px;
 }

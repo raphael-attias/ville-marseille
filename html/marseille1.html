@@ -1,34 +1,37 @@
-<!doctype html>
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randonnées | Ville de Marseille</title>
     <link rel="stylesheet" type="text/css" href="../styles/header.css">
     <link rel="stylesheet" type="text/css" href="../styles/index.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Montserrat:ital,wght@0,100;0,400;1,100&family=Poppins&family=Ubuntu&display=swap"
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <title>Ville-Marseille-randonnees</title>
+    <script src="https://kit.fontawesome.com/a5b2b45d49.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="randohtml">
     <header>
-        <img class="logomrs" src="../images/Armoiries_de_Marseille.png">
+        <div class="menubt">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle">Menu</label>
+            <ul id="menuList">
+                <li class="haut"><a href="marseille.html">Accueil</a></li>
+                <li><a href="marseille1.html">Randonnées</a></li>
+                <li><a href="marseille2.html">Plages</a></li>
+                <li><a href="marseille3.html">Parcs Publiques</a></li>
+                <li><a href="marseille4.html">Annuaires des Musées</a></li>
+                <li><a href="marseille5.html">Histoire</a></li>
+                <li class="bas"><a href="marseille6.html">Contact</a></li>
+            </ul>
+        </div>
         <nav>
-            <div class="menubt">
-                <input type="checkbox" id="menuToggle">
-                <label for="menuToggle">Menu</label>
-                <ul id="menuList">
-                    <li class="haut"><a href="index.html">Accueil</a></li>
-                    <li><a href="randonnees.html">Randonnées</a></li>
-                    <li><a href="plages.html">Les plages</a></li>
-                    <li><a href="parcs.html">Parcs publiques</a></li>
-                    <li><a href="musee.html">Annuaires des musées</a></li>
-                    <li class="bas"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+            <img class="logomrs" src="../images/Armoiries_de_Marseille.png">
             <ul class="reseau">
                 <li><a href="https://twitter.com/marseille"><img src="../images/twitter.png" alt="twiter"></a></li>
                 <li><a href="https://facebook.com/marseilleville/"><img src="../images/facebook.png" alt="facebook"></a>
@@ -43,7 +46,9 @@
     <main>
         <section class="introrando">
             <h2>Découvrez les Trésors Naturels de Marseille à Pied</h2>
-            <img class="imgacceuil2" src="../images/carte-intro-rando.png">
+            <picture>
+                <img class="imgacceuil2" src="../images/carte-intro-rando.png">
+            </picture>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marseille, la belle cité
                 méditerranéenne, est bien plus qu'une ville portuaire animée. Au-delà de ses
                 rues pavées et de son atmosphère vibrante, cette destination emblématique recèle un trésor naturel qui
@@ -67,7 +72,7 @@
         <section class="rando">
             <h3>&nbsp;&nbsp;&nbsp;&nbsp;Randonnée sur l'Île de Ratonneau, Archipel du Frioul</h3>
             <article>
-                
+
                 <ul>
                     <li>
                         <h4>Distance</h4> 6.6 km (Boucle)
@@ -82,11 +87,11 @@
                         <h4>Départ</h4> Iles du Frioul
                     </li>
                 </ul>
-                
-            <figure class="image-container">
-                <img class="randoim" src="../images/frioul.jpg">
-                <img class="randoim" src="../images/rando-frioul.png">
-            </figure>
+
+                <figure class="image-container">
+                    <img class="randoim" src="../images/frioul.jpg">
+                    <img class="randoim" src="../images/rando-frioul.png">
+                </figure>
 
                 <p>
                     Découvrez l'île de Ratonneau, une perle de l'archipel du Frioul. L'île tire son nom de son histoire
@@ -114,7 +119,7 @@
         <section class="rando">
             <h3>&nbsp;&nbsp;&nbsp;&nbsp;Exploration de la splendide Calanque de Sormiou</h3>
             <article>
-                
+
                 <ul>
                     <li>
                         <h4>Distance</h4> 5.7 km (Boucle)
@@ -129,11 +134,11 @@
                         <h4>Départ</h4> Marseille 9ème
                     </li>
                 </ul>
-                
-            <picture class="image-container">
-                <img class="randoim" src="../images/baumette.jpg">
-                <img class="randoim" src="../images/rando-baumette.png">
-            </picture>
+
+                <picture class="image-container">
+                    <img class="randoim" src="../images/baumette.jpg">
+                    <img class="randoim" src="../images/rando-baumette.png">
+                </picture>
                 <p>Explorez la Calanque de Sormiou lors d'une randonnée en boucle de 5.7 km. Ce parcours vous permettra
                     de
                     découvrir cette magnifique calanque et sa plage, qui est particulièrement impressionnante vue d'en
@@ -160,7 +165,7 @@
         <section class="rando">
             <h3>&nbsp;&nbsp;&nbsp;&nbsp;Promenade Côtière : De la Pointe-Rouge au Parc Pastré</h3>
             <article>
-                
+
                 <ul>
                     <li>
                         <h4>Distance</h4> 5.6 km (Boucle)
@@ -175,11 +180,11 @@
                         <h4>Départ</h4> Marseille 8ème
                     </li>
                 </ul>
-                
-            <picture class="image-container">
-                <img class="randoim" src="../images/pointe-rouge.jpg">
-                <img class="randoim" src="../images/rando-pointe-rouge.png">
-            </picture>
+
+                <picture class="image-container">
+                    <img class="randoim" src="../images/pointe-rouge.jpg">
+                    <img class="randoim" src="../images/rando-pointe-rouge.png">
+                </picture>
 
                 <p>Découvrez la diversité de Marseille en une seule balade qui combine le charme de la Pointe-Rouge et
                     la tranquillité du parc Pastré.
@@ -225,11 +230,11 @@
                         <h4>Départ</h4> Marseille 8ème
                     </li>
                 </ul>
-                
-            <picture class="image-container">
-                <img class="randoim" src="../images/ntrdme.jpg">
-                <img class="randoim" src="../images/rando-ntrdme.png">
-            </picture>
+
+                <picture class="image-container">
+                    <img class="randoim" src="../images/ntrdme.jpg">
+                    <img class="randoim" src="../images/rando-ntrdme.png">
+                </picture>
                 <p>Commencez votre ascension à l'Office de Tourisme de Marseille, en suivant cet itinéraire direct.
                     Descendez la Canebière pour atteindre le Quai des Belges. Passez sous l'ombrière de Norman Foster et
                     longez le Quai de Rive-Neuve. Arrivé à l'embarcadère du ferry-boat, prenez à gauche la Rue Fort
@@ -329,6 +334,66 @@
         </section>
     </main>
     <footer>
-        © 2021 Ville de Marseille - Randonnées en Provence
+        <article class="article_footer_liens">
+            <div class="bloc_liens_marseille">
+                <a href="https://www.marseille.fr/">
+                    <img class="image_logo_footer" src="../images/logo_ville_de_marseille.png"
+                        alt="logo de ville marseille">
+                </a>
+                <a href="https://www.marseille.fr/mairie/services-de-proximit%C3%A9/all%C3%B4-mairie">
+                    <img class="image_logo_footer" src="../images/allomairie-blanc.png" alt="logo allo mairie">
+                </a>
+                <a href="https://www.sortiramarseille.fr/">
+                    <img class="image_logo_footer" src="../images/sortir_a_marseille.png" alt="logo sortir a marseille">
+                </a>
+                <a href="https://www.acce-o.fr/client/marseille">
+                    <img class="image_logo_footer" src="../images/acceo_blanc_footer.png"
+                        alt="logo accessibilité malentendant">
+                </a>
+            </div>
+            <div class="bloc_reseaux_sociaux_marseille">
+                <a href="https://twitter.com/marseille">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://facebook.com/marseilleville/">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/villemarseille/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/user/VilledeMarseille">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </article>
+        <hr>
+        <article class="article_footer_nav">
+            <h1>Culture et loisirs</h1>
+            <ul class="liste_footer">
+                <a href="marseille.html">
+                    <li>Accueil</li>
+                </a>
+                <a href="marseille1.html">
+                    <li>Randonnées</li>
+                </a>
+                <a href="marseille2.html">
+                    <li>Plages</li>
+                </a>
+                <a href="marseille3.html">
+                    <li>Parcs Publiques</li>
+                </a>
+                <a href="marseille4.html">
+                    <li>Annuaire des Musées</li>
+                </a>
+                <a href="marseille5.html">
+                    <li>Histoire</li>
+                </a>
+                <a href="marseille6.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </article>
     </footer>
 </body>
+
+</html>

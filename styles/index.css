@@ -12,6 +12,10 @@ main {
     background: white;
 }
 
+.img-container {
+    position: relative;
+}
+
 .titre {
     font-size: 56px;
     font-weight: bolder;
@@ -20,7 +24,7 @@ main {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: black;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -31,9 +35,20 @@ main {
     position: relative;
     z-index: 0;
 }
+
+
+@media screen and (max-width: 768px) {
+    .titre {
+        font-size: 26px;
+        top: 20%;
+    }
+}
+
+
 /* Style pour la barre de recherche */
 .search-box {
     display: flex;
+    margin: 0 10px;
     justify-content: center;
     background-color: #0095ff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -44,27 +59,25 @@ main {
 .search-box input {
     padding: 5px;
     border: 1px solid whitesmoke;
-    border-radius: 4px;
-    color: whitesmoke;
+    border-radius: 10px 0 0 10px;
+    color: #0047a3;
     background-color: #f7f4f1;
-    line-height: 2.5em;
     width: 75%;
+    min-height: 40px;
 }
 
 .search-box button {
-    background-color: dimgray;
+    width: 40px;
+    background-color: gray;
     color: whitesmoke;
     border: none;
-    border-radius: 4px;
+    border-radius: 0 10px 10px 0;
     padding: 5px 10px;
     cursor: pointer;
-    margin-bottom: 10px;
-    justify-content: center;
 }
 
-/* Style au survol du bouton de recherche */
 .search-box button:hover {
-    background-color: #0095ff;
+    background-color: #0047a3;
 }
 
 /* Ajout de styles pour rendre la barre de navigation responsive */
@@ -100,24 +113,41 @@ main {
     animation: unfoldImage 3s ease-out forwards;
 }
 
-.introindex,
-h2 {
+.introindex>h2{
     justify-content: center;
     padding: 20px;
     font-size: 38px;
     text-align: center;
     color: #0095ff;
 }
+@media screen and (max-width: 768px) {
+    .introindex {
+        font-size: 20px;
+    }
+    .introindex>h2 {
+        font-size: 26px;
+    }
+}
 
-.introindex>p {
-    text-align: left;
-    margin: 0 10 0 10;
+.introindex {
+    text-align: center;
+}
+
+.introindex p {
+    max-width: 900px;
+    max-height: auto;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
     font-size: large;
     color: #0095ff;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .introrando h2 {
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 /* Style de la section d'introduction */
@@ -126,11 +156,17 @@ h2 {
     padding: 40px;
 
 }
-
-.introrando>p {
-    text-align: left;
-    padding-top: 25px;
+.introrando>p{
+    padding: 30px;
+    max-width: 1300px;
+    margin: auto;
 }
+@media screen and (min-width: 768px) {
+    .introrando h2 {
+        font-size: 42px;
+    }
+}
+
 
 .introrando img {
     max-width: 50%;
@@ -192,8 +228,8 @@ h2 {
 }
 
 .image-container {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
 }
 
 .rando img.randoim {
@@ -231,6 +267,7 @@ section.rando {
 /* Style des listes des randonnées */
 .rando ul {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     list-style: none;
     padding: 0;
