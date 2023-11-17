@@ -50,42 +50,11 @@
         <section>
             <img class="img-museum" src="../images/ancien_musee-transformed.jpeg" alt="museum">
         </section>
+        <section>
+            <h2>Musée à Marseille</h2>
+            <div id="map"></div>
+        </section>
 
-        <h2>Musée à Marseille</h2>
-        <div id="map"></div>
-        <script>
-            var map = L.map('map').setView([43.2965, 5.3698], 13);
-
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
-
-            var museums = [
-                { name: 'Mucem', location: [43.29670187969974, 5.360953750015538] },
-                { name: 'Mémorial de deportations', location: [43.29556073623129, 5.362452938374674] },
-                { name: 'Musée Regards de Provence', location: [43.29765521195674, 5.363415823031125] },
-                { name: 'Muséum dhistoire naturelle de Marseille', location: [43.30428172525047, 5.394200787074862] },
-                { name: 'Musée des enfants', location: [43.29767796266907, 5.366799838374823] },
-                { name: 'Musée des Docks romains', location: [43.296804779686504, 5.368188524882504] },
-                { name: 'Musée dArchéologie', location: [43.30017528738687, 5.367971896046792] },
-                { name: 'Musée dHistoire de Marseille ', location: [43.297775354242965, 5.375461438374812] },
-                { name: 'Mémorial de la Marseillaise ', location: [43.297780923488766, 5.378464478931857] },
-                { name: 'Musée Cantini ', location: [43.292164977853865, 5.378202416671407] },
-                { name: 'Musée Grobet-Labadié', location: [43.30336440143597, 5.39277374671535] },
-                { name: 'Musée des Beaux-Arts', location: [43.30463438624122, 5.3938910960471] },
-                { name: 'Musée de la Moto', location: [43.328127531265196, 5.404168479890498] },
-                { name: ' Musée des Arts décoratifs, de la Faïence et de la Mode', location: [43.25732503562246, 5.381957161390008] },
-                { name: 'Musée dArt Contemporain', location: [43.25025414153531, 5.389697943883947] }
-            ];
-            museums.forEach(function (museum) {
-                L.marker(museum.location).addTo(map)
-                    .bindPopup('<b>' + museum.name + '</b>')
-                    .openPopup();
-            });
-        </script>
-
-
-        </article>
         <section class="containner">
             <article class="block">
                 <h2>Mucem</h2>
@@ -102,7 +71,6 @@
                 <img src="../images/mucem.jpg" alt="mucem">
             </article>
 
-            </article>
             <article class="block">
                 <h2>Mémorial de deportations</h2>
                 <p>2. Le Mémorial des Déportations de Marseille est un lieu commémoratif dédié aux victimes de la
@@ -267,6 +235,7 @@
                 <img src="../images/mac.jpg" alt="Musée dArt Contemporain">
             </article>
         </section>
+
     </main>
     <footer>
         <article class="article_footer_liens">
@@ -329,6 +298,37 @@
             </ul>
         </article>
     </footer>
+    <script>
+        var map = L.map('map').setView([43.2965, 5.3698], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        var museums = [
+            { name: 'Mucem', location: [43.29670187969974, 5.360953750015538] },
+            { name: 'Mémorial de deportations', location: [43.29556073623129, 5.362452938374674] },
+            { name: 'Musée Regards de Provence', location: [43.29765521195674, 5.363415823031125] },
+            { name: 'Muséum dhistoire naturelle de Marseille', location: [43.30428172525047, 5.394200787074862] },
+            { name: 'Musée des enfants', location: [43.29767796266907, 5.366799838374823] },
+            { name: 'Musée des Docks romains', location: [43.296804779686504, 5.368188524882504] },
+            { name: 'Musée dArchéologie', location: [43.30017528738687, 5.367971896046792] },
+            { name: 'Musée dHistoire de Marseille ', location: [43.297775354242965, 5.375461438374812] },
+            { name: 'Mémorial de la Marseillaise ', location: [43.297780923488766, 5.378464478931857] },
+            { name: 'Musée Cantini ', location: [43.292164977853865, 5.378202416671407] },
+            { name: 'Musée Grobet-Labadié', location: [43.30336440143597, 5.39277374671535] },
+            { name: 'Musée des Beaux-Arts', location: [43.30463438624122, 5.3938910960471] },
+            { name: 'Musée de la Moto', location: [43.328127531265196, 5.404168479890498] },
+            { name: ' Musée des Arts décoratifs, de la Faïence et de la Mode', location: [43.25732503562246, 5.381957161390008] },
+            { name: 'Musée dArt Contemporain', location: [43.25025414153531, 5.389697943883947] }
+        ];
+        museums.forEach(function (museum) {
+            L.marker(museum.location).addTo(map)
+                .bindPopup('<b>' + museum.name + '</b>')
+                .openPopup();
+        });
+    </script>
+
 </body>
 
 </html>
