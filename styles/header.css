@@ -85,7 +85,6 @@ header label[for="menuToggle"] {
 #menuList {
     list-style: none;
     padding: 0;
-    margin-right: 15px;
     position: fixed;
     top: 75px;
     left: 20px;
@@ -155,6 +154,9 @@ header label[for="menuToggle"] {
 }
 
 @media (max-width: 768px) {
+    *{
+        max-width: 100%;
+    }
     header nav {
         flex-direction: column;
         align-items: center;
@@ -183,7 +185,6 @@ header label[for="menuToggle"] {
 
     .reseau {
         margin-left: auto;
-        margin-right: 20px;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: flex-start;
@@ -192,10 +193,32 @@ header label[for="menuToggle"] {
         margin-top: -60px;
     }
     header label[for="menuToggle"] {
+        cursor: pointer;
+        background-color: dimgray;
+        color: white;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        position: fixed;
         top: 5px;
         left: 10px;
         height: 50px;
         width: 50px;
+        border-radius: 10px;
+        justify-content: center;
+        z-index: 2;
+    }
+    #menuList {
+        top: 47px;
+        left: 10px;
+        width: 50%;
+        max-width: none;
+        display: none;
     }
 
+    #menuToggle:checked + label + #menuList {
+        display: block;
+        position: fixed;
+        left: 10px;
+    }
 }
