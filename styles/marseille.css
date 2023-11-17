@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 * {
     font-family: 'Comfortaa', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*header */
 header {
     display: flex;
     align-items: center;
@@ -85,7 +86,6 @@ header label[for="menuToggle"] {
 #menuList {
     list-style: none;
     padding: 0;
-    margin-right: 15px;
     position: fixed;
     top: 75px;
     left: 20px;
@@ -154,7 +154,217 @@ header label[for="menuToggle"] {
     max-width: auto;
 }
 
+@media (max-width: 768px) {
+    *{
+        max-width: 100%;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav li {
+        margin-right: 0;
+    }
+
+    header {
+        padding-top: 45px;
+    }
+
+    .logomrs {
+        max-height: 80px;
+        height: auto;
+        justify-content: bottom;
+        margin: 20 px auto 0 !;
+        display: block;
+    }
+
+    .reseau {
+        margin-left: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end; /* Alignez les logos à droite */
+        padding-bottom: 30px;
+        margin-top: -60px;
+    }
+    header label[for="menuToggle"] {
+        cursor: pointer;
+        background-color: dimgray;
+        color: white;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        position: fixed;
+        top: 5px;
+        left: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        justify-content: center;
+        z-index: 2;
+    }
+    #menuList {
+        top: 47px;
+        left: 10px;
+        width: 50%;
+        max-width: none;
+        display: none;
+    }
+
+    #menuToggle:checked + label + #menuList {
+        display: block;
+        position: fixed;
+        left: 10px;
+    }
+}
+
+/* css page */
+main {
+    background: white;
+}
+.titre {
+    font-size: 56px;
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: black;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.img-container {
+    position: relative;
+}
+.imgacceuil1 {
+    max-width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .titre {
+        font-size: 26px;
+        top: 20%;
+    }
+}
+
+
+/* Style pour la barre de recherche */
+.search-box {
+    display: flex;
+    margin: 0 10px;
+    justify-content: center;
+    background-color: #0095ff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.search-box input {
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px 0 0 10px;
+    color: #0047a3;
+    background-color: #f7f4f1;
+    width: 75%;
+    min-height: 40px;
+}
+
+.search-box button {
+    width: 40px;
+    background-color: gray;
+    color: whitesmoke;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0047a3;
+}
+
+.introindex>h2{
+    justify-content: center;
+    padding: 20px;
+    font-size: 38px;
+    text-align: center;
+    color: #0095ff;
+}
+@media screen and (max-width: 768px) {
+    .introindex {
+        font-size: 20px;
+    }
+    .introindex>h2 {
+        font-size: 26px;
+    }
+}
+
+.introindex {
+    text-align: center;
+}
+
+.introindex p {
+    max-width: 900px;
+    max-height: auto;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    color: #0095ff;
+    margin-bottom: 20px;
+}
+
+
+/* Style de la section de la carte */
+.carte {
+    background-image: url('../images/imgcartereact.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Style du texte dans la carte */
+.carte h4 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.carte a {
+    color: #f7f4f1;
+}
+
+/* Style du bouton dans la carte */
+.carte button {
+    background-color: dimgray;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+/* Ajustement du bouton au survol */
+.carte button:hover {
+    background-color: #0095ff;
+}
+
+
+/* footer */
 footer {
     background-color: #0047A3;
     position: relative;
@@ -259,6 +469,9 @@ footer a:hover {
 
 
 @media (max-width: 768px) {
+    *{
+        max-width: 100%;
+    }
     header nav {
         flex-direction: column;
         align-items: center;
@@ -287,7 +500,6 @@ footer a:hover {
 
     .reseau {
         margin-left: auto;
-        margin-right: 20px;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: flex-start;
@@ -296,12 +508,34 @@ footer a:hover {
         margin-top: -60px;
     }
     header label[for="menuToggle"] {
+        cursor: pointer;
+        background-color: dimgray;
+        color: white;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        position: fixed;
         top: 5px;
         left: 10px;
         height: 50px;
         width: 50px;
+        border-radius: 10px;
+        justify-content: center;
+        z-index: 2;
+    }
+    #menuList {
+        top: 47px;
+        left: 10px;
+        width: 50%;
+        max-width: none;
+        display: none;
     }
 
+    #menuToggle:checked + label + #menuList {
+        display: block;
+        position: fixed;
+        left: 10px;
+    }
 }
 
 @media screen and (max-width: 528px) {
