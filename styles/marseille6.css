@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+* {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #0047a3;
+    padding: 10px 20px;
+    max-width: 100%;
+    max-height: 130px;
+    z-index: 1000;
+}
+
+
+.logomrs {
+    max-height: 80px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.bas {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.haut {
+    border-top-right-radius: 10px;
+
+}
+
+.menubt {
+    display: flex;
+    align-items: center;
+    max-width: 97.99px;
+    max-height: auto;
+}
+  
+
+header label[for="menuToggle"] {
+    cursor: pointer;
+    background-color: dimgray;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    height: 65px;
+    width: 100px;
+    border-radius: 10px;
+    justify-content: center;
+    z-index: 2;
+}
+#menuToggle{
+    opacity: 0;
+
+}
+#menuToggle:checked + label{
+    border-radius: 10px 10px 0 0;
+}
+#menuList {
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 75px;
+    left: 20px;
+    display: none;
+    z-index: 2;
+}
+
+#menuList li {
+    margin: 0;
+    position: relative;
+    background-color: dimgray;
+    padding: 10px;
+    z-index: 1;
+}
+
+#menuList a {
+    color: white;
+    text-decoration: none;
+}
+#menuList a:hover{
+    text-decoration: underline;
+}
+
+#menuList li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    left: -20px;
+}
+
+.menu-link {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px 15px;
+    border: none;
+    transition: background-color 0.2s;
+    background-color: antiquewhite;
+    display: inline-block;
+}
+
+#menuToggle:checked + label + #menuList {
+    display: block;
+}
+
+.reseau {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+}
+
+.reseau li {
+    list-style: none;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: baseline;
+    position: relative;
+}
+
+.reseau img {
+    max-width: 20px;
+    max-width: auto;
+}
+
+
+@media (max-width: 768px) {
+    *{
+        max-width: 100%;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav li {
+        margin-right: 0;
+    }
+
+    header {
+        padding-top: 45px;
+    }
+
+    .logomrs {
+        max-height: 80px;
+        height: auto;
+        justify-content: bottom;
+        margin: 20 px auto 0 !;
+        display: block;
+    }
+
+    .reseau {
+        margin-left: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end; /* Alignez les logos à droite */
+        padding-bottom: 30px;
+        margin-top: -60px;
+    }
+    header label[for="menuToggle"] {
+        cursor: pointer;
+        background-color: dimgray;
+        color: white;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        position: fixed;
+        top: 5px;
+        left: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        justify-content: center;
+        z-index: 2;
+    }
+    #menuList {
+        top: 47px;
+        left: 10px;
+        width: 50%;
+        max-width: none;
+        display: none;
+    }
+
+    #menuToggle:checked + label + #menuList {
+        display: block;
+        position: fixed;
+        left: 10px;
+    }
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Faites en sorte que la section 'main' prenne le reste de l'espace disponible entre le header et le footer */
+    background: white;
+}
+
+.contacthtml {
+    flex: 1;
+    background: url('../images/velcontact.jpeg') center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column; /* Ajout de cette ligne pour permettre à .contacthtml d'occuper toute la hauteur */
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    color: #0047a3;
+}
+
+.contact img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    color: #f8782a;
+    font-size: larger;
+    font-weight: bolder;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+/* Les styles précédents restent inchangés */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 2px solid #0095ff;
+    color: rgb(0, 116, 217);
+}
+
+form button {
+    display: block;
+    width: 100%;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: dimgray;
+    color: #f7f4f1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border: solid 2px #0095ff;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        max-width: 67%;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .contact img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #0047A3;
+    position: relative;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 300px;
+    justify-content: center;
+}
+
+footer hr {
+    width: 90%;
+    border: 1px solid white;
+    margin: 20px auto;
+}
+
+footer::after {
+    background-image: url(images/Armoiries_de_Marseille.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .1;
+    background-repeat: no-repeat;
+    background-size: 582px;
+    background-position: 56%;
+    z-index: 1;
+}
+
+footer .fa-brands {
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+}
+footer h1{
+    margin: 10px 0;
+}
+footer img {
+    object-fit: cover;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: white !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.article_footer_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article_footer_liens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.bloc_liens_marseille {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bloc_reseaux_sociaux_marseille {
+    display: flex;
+    flex-direction: row;
+}
+
+.liste_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.liste_footer li {
+    margin: 0 10px;
+}
+
+.image_logo_footer {
+    height: auto;
+    width: 7em;
+    margin: 0 10px;
+
+}
+
+@media screen and (max-width: 528px) {
+    footer {
+        padding: 30px 0;
+    }
+    .liste_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .liste_footer li{
+        margin: 5px 0;
+    }
+    .article_footer_liens{
+        flex-direction: column-reverse;
+    }
+    .bloc_liens_marseille{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .bloc_liens_marseille a{
+        width: 35%;
+        text-align: center;
+    }
+    .bloc_liens_marseille img{
+        margin: 0;
+    }
+    footer hr {
+        width: 50%;
+    }
+}
