@@ -314,6 +314,7 @@ form button {
     form {
         max-width: 67%;
         font-size: 14px;
+        margin-bottom: 30px;
     }
     .contact img {
         width: 100%;
