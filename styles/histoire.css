@@ -119,13 +119,13 @@ main h2 {
 
 .img-museum {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px ;
   object-fit: contain;
 }
 .img-marseille {
   width: 100%;
   height: 300px;
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px ;
   object-fit: cover;
 } 
 
@@ -177,4 +177,11 @@ main h2 {
 
 .date:first-child::before {
   display: none;
+}
+
+@media screen and (max-width: 830px){
+
+   .ligne_texte_img:hover .overlay {
+    display: none;
+   }
 }
