@@ -48,6 +48,7 @@ main {
 /* Style pour la barre de recherche */
 .search-box {
     display: flex;
+    margin: 0 10px;
     justify-content: center;
     background-color: #0095ff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -58,27 +59,25 @@ main {
 .search-box input {
     padding: 5px;
     border: 1px solid whitesmoke;
-    border-radius: 4px;
-    color: whitesmoke;
+    border-radius: 10px 0 0 10px;
+    color: #0047a3;
     background-color: #f7f4f1;
-    line-height: 2.5em;
     width: 75%;
+    min-height: 40px;
 }
 
 .search-box button {
-    background-color: dimgray;
+    width: 40px;
+    background-color: gray;
     color: whitesmoke;
     border: none;
-    border-radius: 4px;
+    border-radius: 0 10px 10px 0;
     padding: 5px 10px;
     cursor: pointer;
-    margin-bottom: 10px;
-    justify-content: center;
 }
 
-/* Style au survol du bouton de recherche */
 .search-box button:hover {
-    background-color: #0095ff;
+    background-color: #0047a3;
 }
 
 /* Ajout de styles pour rendre la barre de navigation responsive */
@@ -159,6 +158,8 @@ main {
 }
 .introrando>p{
     padding: 30px;
+    max-width: 1300px;
+    margin: auto;
 }
 @media screen and (min-width: 768px) {
     .introrando h2 {
@@ -227,8 +228,8 @@ main {
 }
 
 .image-container {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
 }
 
 .rando img.randoim {
@@ -263,6 +264,7 @@ section.rando {
 
 .rando ul {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     list-style: none;
     padding: 0;

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 html {
@@ -9,7 +10,7 @@ html {
 }
 
 main {
-    margin: 50px 0;
+    padding: 50px 0;
 
 }
 
@@ -185,7 +186,13 @@ h1 {
 .big_section_parc h2 {
     text-align: center;
 }
-
+.back_to_top{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #0047a3;
+    font-weight: bold;
+}
 @media screen and (max-width: 900px) {
     
     .section_presentation {
