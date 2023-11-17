@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+* {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+main {
+    background: white;
+}
+
+.img-container {
+    position: relative;
+}
+
+.titre {
+    font-size: 56px;
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: black;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.imgacceuil1 {
+    max-width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .titre {
+        font-size: 26px;
+        top: 20%;
+    }
+}
+
+
+/* Style pour la barre de recherche */
+.search-box {
+    display: flex;
+    margin: 0 10px;
+    justify-content: center;
+    background-color: #0095ff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.search-box input {
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px 0 0 10px;
+    color: #0047a3;
+    background-color: #f7f4f1;
+    width: 75%;
+    min-height: 40px;
+}
+
+.search-box button {
+    width: 40px;
+    background-color: gray;
+    color: whitesmoke;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0047a3;
+}
+
+/* Ajout de styles pour rendre la barre de navigation responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+
+.imgacceuil2 {
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    animation: unfoldImage 3s ease-out forwards;
+}
+
+.imgacceuil2:hover {
+    animation: unfoldImage 3s ease-out forwards;
+}
+
+.introindex>h2{
+    justify-content: center;
+    padding: 20px;
+    font-size: 38px;
+    text-align: center;
+    color: #0095ff;
+}
+@media screen and (max-width: 768px) {
+    .introindex {
+        font-size: 20px;
+    }
+    .introindex>h2 {
+        font-size: 26px;
+    }
+}
+
+.introindex {
+    text-align: center;
+}
+
+.introindex p {
+    max-width: 900px;
+    max-height: auto;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    color: #0095ff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.introrando h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+/* Style de la section d'introduction */
+.introrando {
+    text-align: center;
+    padding: 40px;
+
+}
+.introrando>p{
+    padding: 30px;
+    max-width: 1300px;
+    margin: auto;
+}
+@media screen and (min-width: 768px) {
+    .introrando h2 {
+        font-size: 42px;
+    }
+}
+
+
+.introrando img {
+    max-width: 50%;
+    height: auto;
+    justify-content: center;
+}
+
+/* Style de la section de la carte */
+.carte {
+    background-image: url('../images/imgcartereact.png');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Style du texte dans la carte */
+.carte h4 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.carte a {
+    color: #f7f4f1;
+}
+
+/* Style du bouton dans la carte */
+.carte button {
+    background-color: dimgray;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+/* Ajustement du bouton au survol */
+.carte button:hover {
+    background-color: #0095ff;
+}
+
+
+/* Style de la section de randonnée */
+.rando {
+    font-weight: 500;
+    color: black;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rando-content {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.rando img.randoim {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+section.rando {
+    max-width: 1150px;
+    max-height: auto;
+    background-color: #f7f4f1;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.rando h2 {
+    color: #0095ff;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.rando h3 {
+    color: #0095ff;
+    font-size: 24px;
+    padding-right: 35px;
+    padding: 20px;
+}
+
+.rando ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    background-color: #0095ff;
+    border-radius: 7px;
+}
+
+.rando li {
+    margin: 25px;
+}
+
+.rando p {
+    line-height: 1.4;
+    margin: 20px;
+}
+
+.rando:last-child {
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+    .rando article ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+    }
+
+    .rando p {
+        font-size: 14px;
+        margin: 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .rando {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .rando article {
+        text-align: left;
+    }
+
+    .rando img {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
+
+.tableaurando {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.tableaurando th,
+.tableaurando td {
+    border: 1px solid #0095ff;
+    padding: 8px;
+    text-align: left;
+}
+
+.tableaurando th {
+    background-color: #0095ff;
+}
+
+
+/* contactformulaire*/
+.contacthtml {
+    background: url('../images/velcontact.jpeg') center/cover no-repeat fixed;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact h2{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 30);
+    color: #0047a3;
+}
+
+.contact img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    color: #f8782a;
+    font-size: larger;
+    font-weight: bolder;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Les styles précédents restent inchangés */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 2px solid #0095ff;
+    color: rgb(0, 116, 217);
+}
+
+form button {
+    display: block; /* Added to make the button a block element */
+    width: 100%; /* Make the button full width */
+    font-size: larger;
+    font-weight: bolder;
+    background-color: dimgray;
+    color: #f7f4f1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border: solid 2px #0095ff;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        max-width: 67%;
+        font-size: 14px;
+    }
+    .contact img{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+}
+.mercihtml {
+    background: url('../images/mercimairie.jpg') center/cover no-repeat fixed;
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mercihtml h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 100%;
+}

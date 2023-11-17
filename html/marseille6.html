@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ville de Marseille</title>
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a5b2b45d49.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menubt">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle">Menu</label>
+            <ul id="menuList">
+                <li class="haut"><a href="marseille.html">Accueil</a></li>
+                <li><a href="marseille1.html">Randonnées</a></li>
+                <li><a href="marseille2.html">Plages</a></li>
+                <li><a href="marseille3.html">Parcs Publiques</a></li>
+                <li><a href="marseille4.html">Annuaires des Musées</a></li>
+                <li><a href="marseille5.html">Histoire</a></li>
+                <li class="bas"><a href="marseille6.html">Contact</a></li>
+            </ul>
+        </div>
+        <nav>
+            <img class="logomrs" src="../images/Armoiries_de_Marseille.png">
+            <ul class="reseau">
+                <li><a href="https://twitter.com/marseille"><img src="../images/twitter.png" alt="twiter"></a></li>
+                <li><a href="https://facebook.com/marseilleville/"><img src="../images/facebook.png" alt="facebook"></a>
+                </li>
+                <li><a href="https://www.instagram.com/villemarseille/"><img src="../images/instagram.png"
+                            alt="instagram"></a></li>
+                <li><a href="https://www.youtube.com/user/VilledeMarseille"></a><img src="../images/youtube.png"
+                        alt="youtube"></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contacthtml">
+
+        <div class="contact">
+            <img src="../images/Armoiries_de_Marseille.png">
+        </div>
+        <form action="merci.html" method="POST">
+            <h2>Contactez-nous</h2>
+            <label for="civility">Civilité :</label>
+            <select id="civility" name="civility">
+                <option value="monsieur">Monsieur</option>
+                <option value="madame">Madame</option>
+            </select>
+
+            <label for="firstname">Prénom :</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Ex : Jean" required>
+
+            <label for="lastname">Nom :</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Ex : Dupont" required>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" placeholder="Ex : jean.dupont@example.com" required>
+
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Ex : 0123456789" required>
+
+            <label for="message">Votre demande ? :</label>
+            <input type="text" id="message" name="message" placeholder="Ex : Votre demande ici" required>
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+    </main>
+    <footer>
+        <article class="article_footer_liens">
+            <div class="bloc_liens_marseille">
+                <a href="https://www.marseille.fr/">
+                    <img class="image_logo_footer" src="../images/logo_ville_de_marseille.png"
+                        alt="logo de ville marseille">
+                </a>
+                <a href="https://www.marseille.fr/mairie/services-de-proximit%C3%A9/all%C3%B4-mairie">
+                    <img class="image_logo_footer" src="../images/allomairie-blanc.png" alt="logo allo mairie">
+                </a>
+                <a href="https://www.sortiramarseille.fr/">
+                    <img class="image_logo_footer" src="../images/sortir_a_marseille.png" alt="logo sortir a marseille">
+                </a>
+                <a href="https://www.acce-o.fr/client/marseille">
+                    <img class="image_logo_footer" src="../images/acceo_blanc_footer.png"
+                        alt="logo accessibilité malentendant">
+                </a>
+            </div>
+            <div class="bloc_reseaux_sociaux_marseille">
+                <a href="https://twitter.com/marseille">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://facebook.com/marseilleville/">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/villemarseille/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/user/VilledeMarseille">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </article>
+        <hr>
+        <article class="article_footer_nav">
+            <h1>Culture et loisirs</h1>
+            <ul class="liste_footer">
+                <a href="marseille.html">
+                    <li>Accueil</li>
+                </a>
+                <a href="marseille1.html">
+                    <li>Randonnées</li>
+                </a>
+                <a href="marseille2.html">
+                    <li>Plages</li>
+                </a>
+                <a href="marseille3.html">
+                    <li>Parcs Publiques</li>
+                </a>
+                <a href="marseille4.html">
+                    <li>Annuaire des Musées</li>
+                </a>
+                <a href="marseille5.html">
+                    <li>Histoire</li>
+                </a>
+                <a href="marseille6.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </article>
+    </footer>
+</body>
+</html>
