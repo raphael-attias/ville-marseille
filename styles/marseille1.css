@@ -297,8 +297,6 @@ section.rando {
         font-size: 14px;
         margin: 10px;
     }
-}
-@media screen and (min-width: 768px) {
     .rando {
         flex-direction: row;
         justify-content: space-around;
