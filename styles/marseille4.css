@@ -11,7 +11,6 @@ html {
 
 main {
     padding: 50px 0;
-
 }
 
 h1 {
@@ -186,15 +185,17 @@ h1 {
 .big_section_parc h2 {
     text-align: center;
 }
-.back_to_top{
+
+.back_to_top {
     display: block;
     text-align: center;
     text-decoration: none;
     color: #0047a3;
     font-weight: bold;
 }
+
 @media screen and (max-width: 900px) {
-    
+
     .section_presentation {
         flex-direction: column;
         width: 100%;
@@ -211,14 +212,17 @@ h1 {
     .article_presentation_parcs {
         order: initial;
     }
+
     .article_presentation_parcs {
-        width: 100%; 
+        width: 100%;
     }
-    .article_presentation_parcs a{
+
+    .article_presentation_parcs a {
         width: 100%;
         border-radius: 0;
     }
-    .article_presentation_parcs img{
+
+    .article_presentation_parcs img {
         height: 300px;
     }
 
@@ -240,4 +244,3 @@ h1 {
 
 
 }
-
