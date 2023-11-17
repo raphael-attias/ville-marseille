@@ -73,7 +73,7 @@ header label[for="menuToggle"] {
     width: 100px;
     border-radius: 10px;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
 }
 #menuToggle{
     opacity: 0;
@@ -90,7 +90,7 @@ header label[for="menuToggle"] {
     top: 75px;
     left: 20px;
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 #menuList li {
