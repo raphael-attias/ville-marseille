@@ -151,7 +151,7 @@ h2 {
 
 .section_plage img{
     width: 90%;
-    height: 700px;
+    height: 100%;
     object-fit: cover;
     margin: auto;
     border-radius: 20px;
@@ -185,3 +185,17 @@ h2 {
 }
 
 
+@media screen and (max-width: 470px) {
+    .big_section_info{
+        padding: 30px 20px;
+    }
+    .section_info:nth-child(1) article{
+        flex-direction: column;
+    }
+    .bloc_baignade{
+        width: 100%;
+    }
+    .section_categorie_plage{
+        padding: 20px 10px;
+    }
+}
